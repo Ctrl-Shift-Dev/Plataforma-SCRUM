@@ -1,9 +1,17 @@
 # Plataforma-SCRUM
 
-## 🎯 Objetivo 
+  <p align="center">
+     <a href ="#objetivo">Objetivo</a>  •
+     <a href ="#desafio">Desafio</a>  •
+     <a href ="#backlog">Backlog</a>  •
+     <a href ="#requisitos">Requisitos</a>  •
+     <a href ="#equipe">Equipe</a>
+   </p>
+
+## 🎯 Objetivo <a id="objetivo"></a>
 Projeto de alunos do 1° semestre do curso de Análise e Desenvolvimento de Sistemas da FATEC-SJC, com o objetivo de criar uma aplicação web de intruções para o desenvolvimento do framework Scrum na área de TI.
 
-## ⚙ Desafio
+## ⚙ Desafio <a id="desafio"></a>
 Desenvolver um sistema web que indique todos os processos e artefatos da metodologia ágil
 (Scrum), todos os processos deverão ter conceitos e fundamentos com referências, bem como a
 aplicação com exemplos práticos para a plena compreensão do usuário do sistema.
@@ -17,7 +25,7 @@ adquirido e repassado pelos desenvolvedores).
 Bem como toda a documentação de desenvolvimento deverá ser lastreado no GitHub com todos
 os processos necessários para a fidelização do cliente.
 
-## 📋 Backlog
+## 📋 Backlog <a id="backlog"></a>
 | Sprint | Tarefa | Prioridade | Status |
 | ------ | ------ | ---------- | ------ |
 | 1 | Elaboração do Backlog | Imprescindível | ✅ |
@@ -32,7 +40,7 @@ os processos necessários para a fidelização do cliente.
 | 4 | Revisão geral do produto | Imprescindível | 🛑 |
 | 4 | Responsividade do sistema | Desejado | 🛑 |
 
-## 🗂 Requisitos
+## 🗂 Requisitos <a id="requisitos"></a>
 <details>
    <summary>Funcionais:</summary>
    <ul>
@@ -70,5 +78,5 @@ os processos necessários para a fidelização do cliente.
    </ul>
 </details>
 
-## 🌎 Equipe
+## 🌎 Equipe <a id="equipe"></a>
 
