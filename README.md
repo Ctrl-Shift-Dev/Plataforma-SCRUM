@@ -35,7 +35,7 @@ os processos necessários para a fidelização do cliente.
 | 2 | Marcação do site em HTML | Imprescindível | 🛑 |
 | 2 | Estilizaçao do site em CSS | Importante | 🛑 |
 | 2 | Barra de navegação | Importante | 🛑 |
-| 3 | Avaliação de canteúdo | Imprescindível | 🛑 |
+| 3 | Avaliação de conteúdo | Imprescindível | 🛑 |
 | 3 | Sugestão de conteúdo (ferramentas, leitura, vídeos) | Desejado | 🛑 |
 | 4 | Revisão geral do produto | Imprescindível | 🛑 |
 | 4 | Responsividade do sistema | Desejado | 🛑 |
