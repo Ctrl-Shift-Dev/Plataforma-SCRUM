@@ -3,6 +3,7 @@
   <p align="center">
      <a href ="#objetivo">Objetivo</a>  •
      <a href ="#desafio">Desafio</a>  •
+      <a href ="#mvp">MVP</a>  •
      <a href ="#backlog">Backlog</a>  •
      <a href ="#requisitos">Requisitos</a>  •
      <a href ="#equipe">Equipe</a>
@@ -24,6 +25,8 @@ Todo o material de conhecimento publicado no sistema deverá ter forma indireta 
 adquirido e repassado pelos desenvolvedores).
 Bem como toda a documentação de desenvolvimento deverá ser lastreado no GitHub com todos
 os processos necessários para a fidelização do cliente.
+
+## 🥇 MVP <a id="mvp"></a>
 
 ## 📋 Backlog <a id="backlog"></a>
 | Sprint | Tarefa | Prioridade | Status |
