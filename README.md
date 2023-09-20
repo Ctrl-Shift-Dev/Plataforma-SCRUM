@@ -28,6 +28,10 @@ os processos necessários para a fidelização do cliente.
 
 ## 🥇 MVP <a id="mvp"></a>
 
+<p aling=center>
+     <img src="./docs/img/MVP.png" alt="MVP">
+</p>     
+
 ## 📋 Backlog <a id="backlog"></a>
 | Sprint | Tarefa | Prioridade | Status |
 | ------ | ------ | ---------- | ------ |
