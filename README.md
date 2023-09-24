@@ -33,19 +33,24 @@ os processos necessários para a fidelização do cliente.
 </p>     
 
 ## 📋 Backlog <a id="backlog"></a>
-| Sprint | Tarefa | Prioridade | Status |
-| ------ | ------ | ---------- | ------ |
-| 1 | Elaboração do Backlog | Imprescindível | ✅ |
-| 1 | Projeção do Protótipo navegável no Figma | Imprescindível | ✅ |
-| 1 | Criação do Github do projeto | Importante | ✅ |
-| 1 | Síntese do conteúdo nas páginas | Importante | ✅ |
-| 2 | Marcação do site em HTML | Imprescindível | 🛑 |
-| 2 | Estilizaçao do site em CSS | Importante | 🛑 |
-| 2 | Barra de navegação | Importante | 🛑 |
-| 3 | Avaliação de conteúdo | Imprescindível | 🛑 |
-| 3 | Sugestão de conteúdo (ferramentas, leitura, vídeos) | Desejado | 🛑 |
-| 4 | Revisão geral do produto | Imprescindível | 🛑 |
-| 4 | Responsividade do sistema | Desejado | 🛑 |
+| Sprint | Tarefa | Prioridade | Status | Entrega |
+| ------ | ------ | ---------- | ------ | ------- |
+| 1 | Elaboração do Backlog | Imprescindível | ✅ | 24/09 |
+| 1 | Projeção do Protótipo navegável no Figma | Imprescindível | ✅ | 24/09 |
+| 1 | Criação do Github do projeto | Importante | ✅ | 24/09 |
+| 1 | Síntese do conteúdo nas páginas | Importante | ✅ | 24/09 |
+| 2 | Marcação do site em HTML | Imprescindível | 🛑 | - |
+| 2 | Estilizaçao do site em CSS | Importante | 🛑 | - |
+| 2 | Barra de navegação | Importante | 🛑 | - |
+| 3 | Avaliação de conteúdo | Imprescindível | 🛑 | - |
+| 3 | Sugestão de conteúdo (ferramentas, leitura, vídeos) | Desejado | 🛑 |- |
+| 4 | Revisão geral do produto | Imprescindível | 🛑 | 24/09 |
+| 4 | Responsividade do sistema | Desejado | 🛑 | - |
+
+  ### 1ª Sprint
+  ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/PrototipoFigma-Ctrl-Shift-Dev.gif)
+
+  <a href ="https://www.figma.com/proto/zMqLJJIwJ5Tw2HcVC3Mo9C/PrototipoFigma?page-id=0%3A1&type=design&node-id=1-22&viewport=9575%2C5381%2C0.53&t=oJcADT6DMsE9rUeG-1&scaling=min-zoom&starting-point-node-id=2%3A110&mode=design">Link para o protótipo no Figma</a>
 
 ## 🗂 Requisitos <a id="requisitos"></a>
 <details>
@@ -86,4 +91,14 @@ os processos necessários para a fidelização do cliente.
 </details>
 
 ## 🌎 Equipe <a id="equipe"></a>
+
+| Nome | Cargo | Github | Linkedin |
+| ---- | ----- | ------ | -------- | 
+| Paloma Lima da Silva | Scrum Master |  <a href="https://github.com/palomalima22"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
+| Breno Augusto Santos Jesus  | Product Owner |  <a href="https://github.com/brenoasj"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
+| André Augustos M. Neves | Dev Team | <a href="https://github.com/andreN4vs"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
+| Allan Rafael Pereira da Silva | Dev Team | <a href=""><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
+| Gabriel Felipe Côrrea da Silva | Dev Team | <a href="https://github.com/gabrielfelip"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
+| Mariane de Sousa Ferreira | Dev Team | <a href="https://github.com/Mariiferreira"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
+| Matheus de Sousa Nascimento Marques | Dev Team | <a href="https://github.com/matmarquesx"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>| <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
 
