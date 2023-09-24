@@ -10,7 +10,7 @@
    </p>
 
 ## 🎯 Objetivo <a id="objetivo"></a>
-Projeto de alunos do 1° semestre do curso de Análise e Desenvolvimento de Sistemas da FATEC-SJC, com o objetivo de criar uma aplicação web de intruções para o desenvolvimento do framework Scrum na área de TI.
+Projeto dos alunos do 1° semestre do curso de Análise e Desenvolvimento de Sistemas da FATEC-SJC, com o objetivo de criar uma aplicação web de instruções para o desenvolvimento do framework Scrum na área de TI.
 
 ## ⚙ Desafio <a id="desafio"></a>
 Desenvolver um sistema web que indique todos os processos e artefatos da metodologia ágil
