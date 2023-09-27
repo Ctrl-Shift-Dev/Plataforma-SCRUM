@@ -52,6 +52,8 @@ os processos necessários para a fidelização do cliente.
 
   <a href ="https://www.figma.com/proto/zMqLJJIwJ5Tw2HcVC3Mo9C/PrototipoFigma?page-id=0%3A1&type=design&node-id=1-22&viewport=9575%2C5381%2C0.53&t=oJcADT6DMsE9rUeG-1&scaling=min-zoom&starting-point-node-id=2%3A110&mode=design">Link para o protótipo no Figma</a>
 
+  <a href ="">Apresentação no Youtube</a>
+
    #### Backlog
    ![Sem título](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/assets/143125058/f5cf44af-8b0d-4841-bafd-9f6cf92a49f2)
 
