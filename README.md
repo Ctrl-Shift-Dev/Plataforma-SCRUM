@@ -3,7 +3,7 @@
   <p align="center">
      <a href ="#objetivo">Objetivo</a>  •
      <a href ="#desafio">Desafio</a>  •
-      <a href ="#mvp">MVP</a>  •
+     <a href ="#mvp">MVP</a>  •
      <a href ="#backlog">Backlog</a>  •
      <a href ="#requisitos">Requisitos</a>  •
      <a href ="#equipe">Equipe</a>
@@ -44,7 +44,7 @@ os processos necessários para a fidelização do cliente.
 | 2 | Barra de navegação | Importante | 🛑 | - |
 | 3 | Avaliação de conteúdo | Imprescindível | 🛑 | - |
 | 3 | Sugestão de conteúdo (ferramentas, leitura, vídeos) | Desejado | 🛑 |- |
-| 4 | Revisão geral do produto | Imprescindível | 🛑 | 24/09 |
+| 4 | Revisão geral do produto | Imprescindível | 🛑 | - |
 | 4 | Responsividade do sistema | Desejado | 🛑 | - |
 
   ### 1ª Sprint
@@ -52,9 +52,11 @@ os processos necessários para a fidelização do cliente.
 
   <a href ="https://www.figma.com/proto/zMqLJJIwJ5Tw2HcVC3Mo9C/PrototipoFigma?page-id=0%3A1&type=design&node-id=1-22&viewport=9575%2C5381%2C0.53&t=oJcADT6DMsE9rUeG-1&scaling=min-zoom&starting-point-node-id=2%3A110&mode=design">Link para o protótipo no Figma</a>
 
-   ### Backlog
+   #### Backlog
    ![Sem título](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/assets/143125058/f5cf44af-8b0d-4841-bafd-9f6cf92a49f2)
->
+
+   #### Burndown
+   ![burndown](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/assets/143125058/7dbbdc97-0a39-40f0-b390-a5a986d09079)
 
 ## 🗂 Requisitos <a id="requisitos"></a>
 <details>
