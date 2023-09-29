@@ -54,7 +54,7 @@ os processos necessários para a fidelização do cliente.
 
   <a href ="https://youtu.be/9_RjVpeYKVo?si=0Un3n2u2dpyAXk-a">Apresentação no Youtube</a>
 
-   #### Backlog
+   #### Backlog da Sprint
    ![Sem título](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/assets/143125058/f5cf44af-8b0d-4841-bafd-9f6cf92a49f2)
 
    #### Burndown
