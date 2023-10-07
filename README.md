@@ -57,8 +57,7 @@ os processos necessários para a fidelização do cliente.
    #### Backlog da Sprint
    ![Sem título](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/assets/143125058/f5cf44af-8b0d-4841-bafd-9f6cf92a49f2)
 
-   #### Burndown
-   ![burndown](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/assets/143125058/7dbbdc97-0a39-40f0-b390-a5a986d09079)
+
 
 ## 🗂 Requisitos <a id="requisitos"></a>
 <details>
