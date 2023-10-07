@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #9E957D8C;
+}
+
+.title {
+    color: #000;
+    text-align: center;
+    font-family: Kanit;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 32px;
+}
+
+.text {
+    color: #040404;
+    text-align: justify;
+    font-family: Arial;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 32px 346px 0 346px;
+
+}
+
+.card{
+    flex-direction: row;
+    width: auto;
+    border: 0;
+}
+.card a {
+    width: 296px;
+    height: 360px;
+    margin: 50px;
+    border-radius: 26px;
+    background-color: #9E957D8C;
+    text-decoration: none;
+    
+}
+
+.card a:hover{
+    background-color: bisque;
+}
+
+.card img {
+    width: 239px;
+    height: 239px;
+    margin: 27px 0 0 30px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #000;
+    text-align: center;
+    font-family: Arial;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
