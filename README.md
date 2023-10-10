@@ -57,7 +57,7 @@ os processos necessários para a fidelização do cliente.
    #### Backlog da Sprint
    ## 📋 Backlog da Sprint <a id="backlogsprint"></a>
 | Responsável | Atividade | Início | Duração | Término |
-| -- | ---------- | ------- | ------ | ------- |
+| ------- | ------- | ------- | ------- | ------- |
 | Breno | Criação do GitHub do Projeto | 04/09/2023 | 1 | 04/09/2023 |
 | Breno | Elaboração do Backlog do Produto | 04/09/2023 | 8 | 11/09/2023 |
 | Equipe | Estudo da Ferramenta Figma | 04/09/2023 | 3 | 06/09/2023 |
