@@ -39,13 +39,13 @@ os processos necessários para a fidelização do cliente.
 | 1 | Projeção do Protótipo navegável no Figma | 75% | ✅ | 24/09 |
 | 1 | Criação do Github do projeto | 80% | ✅ | 24/09 |
 | 1 | Síntese do conteúdo nas páginas | 70% | ✅ | 24/09 |
-| 2 | Marcação do site em HTML | 95% | 🛑 | - |
-| 2 | Estilizaçao do site em CSS | 65% | 🛑 | - |
-| 2 | Barra de navegação | 45% | 🛑 | - |
-| 3 | Avaliação de conteúdo | 85% | 🛑 | - |
-| 3 | Sugestão de conteúdo (ferramentas, leitura, vídeos) | 35% | 🛑 |- |
-| 4 | Revisão geral do produto | 90% | 🛑 | - |
-| 4 | Responsividade do sistema | 50% | 🛑 | - |
+| 2 | Marcação do site em HTML | 95% | 🔨 | 15/10 |
+| 2 | Estilizaçao do site em CSS | 65% | 🔨 | 15/10 |
+| 2 | Barra de navegação | 45% | 🔨 | 15/10 |
+| 3 | Avaliação de conteúdo | 85% | 🛑 | 05/11 |
+| 3 | Sugestão de conteúdo (ferramentas, leitura, vídeos) | 35% | 🛑 | 05/11 |
+| 4 | Revisão geral do produto | 90% | 🛑 | 26/11 |
+| 4 | Responsividade do sistema | 50% | 🛑 | 26/11 |
 
   ### 1ª Sprint
   ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/PrototipoFigma-Ctrl-Shift-Dev.gif)
