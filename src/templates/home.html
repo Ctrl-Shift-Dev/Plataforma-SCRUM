@@ -1,75 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-   ,<link rel="stylesheet" href="style.css">
-   <nav>
-    <ul>
-        <li class="dropdown">
-            <a href="#">Início</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Módulo 1</a></li>
-                <li><a href="#">Módulo 2</a></li>
-                <li><a href="#">Módulo 3</a></li>
-                <li><a href="#">Testes </a></li>
-                <!-- Adicione mais itens de menu conforme necessário -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img src="../static/img/logo.png" class="logo">
+                <li class="dropdown">
+                    <a href="#">Início</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Módulo 1</a></li>
+                        <li><a href="#">Módulo 2</a></li>
+                        <li><a href="#">Módulo 3</a></li>
+                        <li><a href="#">Testes </a></li>
+                        <!-- Adicione mais itens de menu conforme necessário -->
+                    </ul>
+                </li>
+                <li><a href="#quemsomos1">Quem Somos </a></li>
+                <li><a href="#contatos">Contatos </a></li>
+                <li><a href="#suporte">Suporte </a></li>
             </ul>
-        </li>
-        <li><a href="#quemsomos1">Quem Somos </a></li>
-        <li><a href="#contatos">Contatos </a></li>
-        <li><a href="#suporte">Suporte </a></li>
-    </ul>
-</nav>
-   <div class="logo">
-<header> <img src="./Imagens/logo.png"> </header>
-   </div>
-   
-   
-   <h1 class="titulo">SCRUM IT</h1>
-   <div class="container">
+        </nav>
+    </header>
+
+    <h1 class="titulo">SCRUM IT</h1>
     <p class="texto">
-       <h3> "Prepare-se para embarcar em uma jornada de aprendizado
+        "Prepare-se para embarcar em uma jornada de aprendizado
         e aprimoramento profissional com nosso curso abrangente
-        sobre Scrum, projetado para impulsionar sua carreira no 
-        gerenciamento de projetos"</h3>
+        sobre Scrum, projetado para impulsionar sua carreira no
+        gerenciamento de projetos"
     </p>
-    
-    <div class="imagem-capa">
-        <img src="/Imagens/capa.png" alt="Capa" class="capa">
+
+    <div class="capa"> <img src="../static/img/capa.png" alt="Capa"> </div>
+
+    <div class="card">
+
+        <a href="modulo1.html">
+            <img class="card-modulo" src="../static/img/scrumteam.png" alt="Scrum Team">
+            <h2 class="card-titulo">Scrum Team</h2>
+        </a>
+
+        <a href="modulo2.html">
+            <img class="card-modulo" src="../static/img/po.png" alt="Artefatos Scrum">
+            <h2 class="card-titulo">Artefatos Scrum</h2>
+        </a>
+
+        <a href="modulo3.html">
+            <img class="card-modulo" src="../static/img/teamdev.png" alt="Eventos Scrum">
+            <h2 class="card-titulo">Eventos Scrum</h2>
+        </a>
     </div>
-    <div class="espaco-abaixo"></div>
-           
-        <div class="imagens-pequenas">
+</body>
 
-            <a href="modulo1.html" class="card-link">
-                <div class="card">
-                    <h2>Scrum Team</h2>
-                    <img src="./Imagens/scrumteam.png" alt="Scrum Team" class="card-home">
-                    <h3>Módulo 1</h3>
-                </div>
-                
-            </a>
-            
-            <a href="modulo2.html" class="card-link">
-                <div class="card">
-                    <h2>Artefatos Scrum</h2>
-                    <img src="./Imagens/po.png" alt="Artefatos Scrum" class="card-home">
-                    <h3>Módulo 2</h3>
-
-                </div>
-            </a>
-        
-            <a href="modulo3.html" class="card-link">
-                <div class="card">
-                    <h2>Eventos Scrum</h2>
-                    <img src="./Imagens/teamdev.png" alt="Eventos Scrum" class="card-home">
-                    <h3>Módulo 3</h3>
-
-                </div>
-            </a>
-            <div style="clear: both;"></div>
-        </div>
-        
-        
+</html>
