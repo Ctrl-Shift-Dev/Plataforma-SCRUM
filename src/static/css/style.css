@@ -73,6 +73,11 @@ p {
     line-height: normal;
 }
 
+.card-modulo {
+    width: 150px;
+    height: 150px;
+}
+
 header {
     background-color: #15abc3;
     color: white;  
