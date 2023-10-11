@@ -1,3 +1,18 @@
+p {
+    color: #040404;
+   
+    font-family: Arial;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 32px 346px 32px 346px;
+
+}
+.subtitulo {
+    text-align: center;
+    
+}
 .titulo {
     color: #000;
     text-align: center;
