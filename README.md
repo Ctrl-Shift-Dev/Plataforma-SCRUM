@@ -35,17 +35,17 @@ os processos necessários para a fidelização do cliente.
 ## 📋 Backlog <a id="backlog"></a>
 | Sprint | Tarefa | Prioridade | Status | Entrega |
 | ------ | ------ | ---------- | ------ | ------- |
-| 1 | Elaboração do Backlog | 100% | ✅ | 24/09 |
-| 1 | Projeção do Protótipo navegável no Figma | 75% | ✅ | 24/09 |
-| 1 | Criação do Github do projeto | 80% | ✅ | 24/09 |
-| 1 | Síntese do conteúdo nas páginas | 70% | ✅ | 24/09 |
-| 2 | Marcação do site em HTML | 95% | 🔨 | 15/10 |
-| 2 | Estilizaçao do site em CSS | 65% | 🔨 | 15/10 |
-| 2 | Barra de navegação | 45% | 🔨 | 15/10 |
-| 3 | Avaliação de conteúdo | 85% | 🛑 | 05/11 |
-| 3 | Sugestão de conteúdo (ferramentas, leitura, vídeos) | 35% | 🛑 | 05/11 |
-| 4 | Revisão geral do produto | 90% | 🛑 | 26/11 |
-| 4 | Responsividade do sistema | 50% | 🛑 | 26/11 |
+| 1 | Elaboração do Backlog | 100 | ✅ | 24/09 |
+| 1 | Projeção do Protótipo navegável no Figma | 95 | ✅ | 24/09 |
+| 1 | Criação do Github do projeto | 90 | ✅ | 24/09 |
+| 1 | Síntese do conteúdo nas páginas | 85 | ✅ | 24/09 |
+| 2 | Marcação do site em HTML | 80 | 🔨 | 15/10 |
+| 2 | Estilizaçao do site em CSS | 75 | 🔨 | 15/10 |
+| 2 | Barra de navegação | 60 | 🔨 | 15/10 |
+| 3 | Avaliação de conteúdo | 50 | 🛑 | 05/11 |
+| 3 | Sugestão de conteúdo (ferramentas, leitura, vídeos) | 35 | 🛑 | 05/11 |
+| 4 | Revisão geral do produto | 25 | 🛑 | 26/11 |
+| 4 | Responsividade do sistema | 20 | 🛑 | 26/11 |
 
   ### 1ª Sprint
   ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/PrototipoFigma-Ctrl-Shift-Dev.gif)
