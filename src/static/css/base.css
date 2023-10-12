@@ -1,0 +1,87 @@
+.logo-button {
+  display: inline-block;
+  background-color: #e0c896;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.logo-button img {
+  max-width: 100px;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  margin-top: -120px; /* Adicionei uma margem superior para separar do topo da página */
+}
+
+.title h1 {
+  font-size: 39px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 67px;
+  text-align: center;
+  letter-spacing: -4px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  padding: 10px;
+  background-color: #e0c896;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #efdfbe;
+}
+
+.content{
+  margin: 8%;
+  margin-top: 50px;
+  text-align: left;
+  font-size: 19px;
+  padding: 20px;
+}
+
+.check{
+  flex: 1;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.button-container button {
+  background-color: #efdfbe; 
+  border: none; 
+  padding: 10px 45px; 
+  cursor: pointer; 
+}
+
+.back img, .home img, .next img {
+  max-width: 35px;
+  margin-right: 10px;
+  margin-top: 5px;
+  
+}
+
+button.back-button:hover {
+  background-color: #e0c896;
+}
+
+button.home-button:hover {
+  background-color: #e0c896;
+}
+
+button.next-button:hover {
+  background-color: #e0c896;
+}
