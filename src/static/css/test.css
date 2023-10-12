@@ -1,6 +1,6 @@
 .logo-button {
   display: inline-block;
-  background-color: #e0c896;
+  background-color: #15abc3;
   padding: 10px;
   text-decoration: none;
   border-radius: 5px;
@@ -41,14 +41,14 @@ header {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #e0c896;
+  background-color: #15abc3;
 }
 
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #efdfbe;
+  background-color: #ffffff;
 }
 
 .content{
@@ -64,7 +64,7 @@ body{
 }
 
 button.finalizar-button {
-  background-color: #efdfbe;
+  background-color: #ffffff;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -80,7 +80,7 @@ button.finalizar-button {
 }
 
 button.finalizar-button:hover {
-  background-color: #e0c896;
+  background-color: #15abc3;
 }
 
 .check img {
