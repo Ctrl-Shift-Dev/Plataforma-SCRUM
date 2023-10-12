@@ -1,0 +1,79 @@
+.logo-button {
+  display: inline-block;
+  background-color: #e0c896;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.logo-button img {
+  max-width: 100px;
+  margin: 0;
+}
+
+.finalizar {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 67px;
+  text-align: center;
+  letter-spacing: -3px;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #e0c896;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #efdfbe;
+}
+
+.congratulations{
+  margin: 9%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 19px;
+  padding: 20px;
+  letter-spacing: -3px;
+}
+
+.check{
+  flex: 1;
+}
+
+button.finalizar-button {
+  background-color: #efdfbe;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin: 4px auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.finalizar-button:hover {
+  background-color: #e0c896;
+}
+
+.check img {
+  max-width: 35px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.finalizar h2 {
+  margin: 0;
+}
