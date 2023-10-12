@@ -1,6 +1,5 @@
 p {
-    color: #040404;
-   
+    color: #040404; 
     font-family: Arial;
     font-size: 26px;
     font-style: normal;
@@ -46,7 +45,7 @@ p {
 
 .card a {
     width: 266px;
-    height: 330px;
+    height: 335px;
     margin: 25px;
     border-radius: 30px;
     background-color: #9E957D8C;
@@ -68,14 +67,13 @@ p {
     color: #000;
     text-align: center;
     font-family: Arial;
-    font-size: 35px;
+    font-size: 34px;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
+    margin-top: 20px;
 }
-
-
-
+ 
 header {
     background-color: #15abc3;
     color: white;  
