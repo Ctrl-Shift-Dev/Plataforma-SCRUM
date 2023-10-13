@@ -63,32 +63,20 @@ body{
   flex: 1;
 }
 
-button.finalizar-button {
+.button {
   background-color: #ffffff;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
+  padding: 15px 15px;
   justify-content: center;
+  text-align: center;  
+  display: flex;
   font-size: 16px;
-  margin: 4px auto;
+  margin: auto;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+ 
 }
 
-button.finalizar-button:hover {
+.button:hover {
   background-color: #15abc3;
-}
-
-.check img {
-  max-width: 35px;
-  margin-right: 10px;
-  margin-top: 5px;
-}
-
-.finalizar h2 {
-  margin: 0;
 }
