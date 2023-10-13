@@ -82,4 +82,4 @@ def sprintreview():
 def retrospective():
     return render_template('retrospective.html')
 
-    
+app.run(debug=True)
