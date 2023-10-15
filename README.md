@@ -47,7 +47,7 @@ os processos necessários para a fidelização do cliente.
 | 4 | Revisão geral do produto | 25 | 🛑 | 26/11 |
 | 4 | Responsividade do sistema | 20 | 🛑 | 26/11 |
 
-  ### 1ª Sprint
+  ### 1° Sprint
   ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/PrototipoFigma-Ctrl-Shift-Dev.gif)
 
   <a href ="https://www.figma.com/proto/zMqLJJIwJ5Tw2HcVC3Mo9C/PrototipoFigma?page-id=0%3A1&type=design&node-id=1-22&viewport=9575%2C5381%2C0.53&t=oJcADT6DMsE9rUeG-1&scaling=min-zoom&starting-point-node-id=2%3A110&mode=design">Link para o protótipo no Figma</a>
@@ -69,6 +69,7 @@ os processos necessários para a fidelização do cliente.
 | Paloma | Elaboração do Slide de Apresentação da Sprint | 18/09/2023 | 5 | 22/09/2023 |
 | Matheus | Gravação do Vídeo de Apresentação | 21/09/2023 | 2 | 22/09/2023 |
 
+### 2° Sprint
 
 
 ## 🗂 Requisitos <a id="requisitos"></a>
