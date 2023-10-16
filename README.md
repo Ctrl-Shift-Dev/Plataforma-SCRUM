@@ -32,7 +32,7 @@ os processos necessários para a fidelização do cliente.
      <img src="./docs/img/upgrade-mvp.png" alt="MVP">
 </p>     
 
-## 📋 Backlog <a id="backlog"></a>
+## 📋 Backlog do Produto <a id="backlog"></a>
 | Sprint | Tarefa | Prioridade | Status | Entrega |
 | ------ | ------ | ---------- | ------ | ------- |
 | 1 | Elaboração do Backlog | 100 | ✅ | 24/09 |
