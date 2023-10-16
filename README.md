@@ -72,6 +72,7 @@ os processos necessários para a fidelização do cliente.
 ### 2° Sprint
 ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/site_flask.gif)
 
+
  #### Backlog da Sprint 2
    ## 📋 Backlog da Sprint <a id="backlogsprint"></a>
 | Responsável | Atividade | Início | Duração | Término |
