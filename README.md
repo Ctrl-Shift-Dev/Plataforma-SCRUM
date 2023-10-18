@@ -55,7 +55,7 @@ os processos necessários para a fidelização do cliente.
   <a href ="https://youtu.be/9_RjVpeYKVo?si=0Un3n2u2dpyAXk-a">Apresentação no Youtube</a>
 
    #### Backlog da Sprint 1
-   <details>
+
    ## 📋 Backlog da Sprint <a id="backlogsprint"></a>
 | Responsável | Atividade | Início | Duração | Término |
 | ------- | ------- | ------- | ------- | ------- |
@@ -70,7 +70,6 @@ os processos necessários para a fidelização do cliente.
 | Paloma | Elaboração do Slide de Apresentação da Sprint | 18/09/2023 | 5 | 22/09/2023 |
 | Matheus | Gravação do Vídeo de Apresentação | 21/09/2023 | 2 | 22/09/2023 |
 
-  </details>
   
   ### 2° Sprint
 ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/site_flask.gif)
