@@ -55,9 +55,6 @@ os processos necessários para a fidelização do cliente.
   <a href ="https://youtu.be/9_RjVpeYKVo?si=0Un3n2u2dpyAXk-a">Apresentação no Youtube</a>
 
    #### Backlog da Sprint 1
-   <details>
-   <img src="./docs/img/sprint1" alt="Sprint1">
-   </details>
 
    ## 📋 Backlog da Sprint <a id="backlogsprint"></a>
 | Responsável | Atividade | Início | Duração | Término |
