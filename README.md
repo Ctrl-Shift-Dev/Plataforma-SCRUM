@@ -33,19 +33,19 @@ os processos necessários para a fidelização do cliente.
 </p>     
 
 ## 📋 Backlog do Produto <a id="backlog"></a>
-| Sprint | Tarefa | Prioridade | Status | Entrega |
-| ------ | ------ | ---------- | ------ | ------- |
-| 1 | Elaboração do Backlog | 100 | ✅ | 24/09 |
-| 1 | Projeção do Protótipo navegável no Figma | 95 | ✅ | 24/09 |
-| 1 | Criação do Github do projeto | 90 | ✅ | 24/09 |
-| 1 | Síntese do conteúdo nas páginas | 85 | ✅ | 24/09 |
-| 2 | Marcação do site em HTML | 80 | 🔨 | 15/10 |
-| 2 | Estilizaçao do site em CSS | 75 | 🔨 | 15/10 |
-| 2 | Barra de navegação | 60 | 🔨 | 15/10 |
-| 3 | Avaliação de conteúdo | 50 | 🛑 | 05/11 |
-| 3 | Sugestão de conteúdo (ferramentas, leitura, vídeos) | 35 | 🛑 | 05/11 |
-| 4 | Revisão geral do produto | 25 | 🛑 | 26/11 |
-| 4 | Responsividade do sistema | 20 | 🛑 | 26/11 |
+| Sprint | US | Tarefa | Prioridade | Status | Entrega |
+| ------ | -- | ------ | ---------- | ------ | ------- |
+| 1 | "Eu, como desenvolvedor, quero lsitas as principais tarefas a seram desenvolvidas no projeto. " | Elaboração do Backlog | 100 | ✅ | 24/09 |
+| 1 | "Eu, como cliente, quero uma uma vi~sao geral do projeto por meio de um protótipo." | Projeção do Protótipo navegável no Figma | 95 | ✅ | 24/09 |
+| 1 | "Eu, como cliente, quero um repositório para acompanhar a evolução do projeto e visualizar a documentação." | Criação do Github do projeto | 90 | ✅ | 24/09 |
+| 1 | "Eu, como usuário, quero clareza no ensino, para facilitar a aprendizagem do método Scrum." | Síntese do conteúdo nas páginas | 85 | ✅ | 24/09 |
+| 2 | "Eu, como desenvolvedor, quero estruturar o site em HTML, para garantir o bom funcionamento do sistema." | Marcação do site em HTML | 80 | ✅ | 15/10 |
+| 2 | "Eu, como desenvolvedor, quero usar o CSS para estilizar o site." | Estilizaçao do site em CSS | 75 | ✅ | 15/10 |
+| 2 | "Eu, como usuário, quero uma barra de navegação para facilitar a transição entre páginas." | Barra de navegação | 60 | ✅ | 15/10 |
+| 3 | "Eu, como cliente, quero um formulário para avaliar o conhecimento dos meus colaboradores." | Avaliação de conteúdo | 50 | 🛠️ | 05/11 |
+| 3 | "Eu, como desenvolvedor, quero sugerir outros conteúdos para ampliar o contato do usuário com o método." | Sugestão de conteúdo (ferramentas, leitura, vídeos) | 35 | 🛠️ | 05/11 |
+| 4 | "Eu, como desenvolvedor, quero revisar todo site em busca de possíveis falhas." | Revisão geral do produto | 25 | 🛑 | 26/11 |
+| 4 | "Eu, como desenvolvedor, quero que seja possível utilizar o site num dispositivo móvel." | Responsividade do sistema | 20 | 🛑 | 26/11 |
 
   ### 1° Sprint
   ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/PrototipoFigma-Ctrl-Shift-Dev.gif)
@@ -69,11 +69,11 @@ os processos necessários para a fidelização do cliente.
 | Paloma | Elaboração do Slide de Apresentação da Sprint | 18/09/2023 | 5 | 22/09/2023 |
 | Matheus | Gravação do Vídeo de Apresentação | 21/09/2023 | 2 | 22/09/2023 |
 
-### 2° Sprint
+  ### 2° Sprint
 ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/site_flask.gif)
 
 
- #### Backlog da Sprint 2
+   #### Backlog da Sprint 2
    ## 📋 Backlog da Sprint <a id="backlogsprint"></a>
 | Responsável | Atividade | Início | Duração | Término |
 | ------- | ------- | ------- | ------- | ------- |
