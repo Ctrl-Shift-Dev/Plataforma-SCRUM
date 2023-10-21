@@ -1,101 +1,88 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/css/normalize.css">
-    <link rel="stylesheet" href="../static/css/test.css">
-</head>
-
-<body>
-    <header>
-        <a href="/modulo2" class="logo-button">
-            <img src="../static/img/logo.png" alt="logo">
-        </a>
-        <div class="title">
-            <h1><b>Bem-vindo ao Teste de Aprendizado Módulo 2</b>
-                <h1>
-        </div>
-    </header>
-
-    <div class="content">
-
-        <div><b>Questão 1:</b> Qual o nome do documento que contém a lista de tarefas do produto, a ser desenvolvida
-            pelo time na metodologia Scrum?</div>
-
-        <p>
-            <input type="radio" id="a" name="resposta" value="a">
-            <label for="a"> A) Product Increment </label>
-        </p>
-
-        <p>
-            <input type="radio" id="b" name="resposta" value="b">
-            <label for="b"> B) Product Owner </label>
-        </p>
-
-        <p>
-            <input type="radio" id="c" name="resposta" value="c" data-resposta="true">
-            <label for="c"> C) Product Meeting </label>
-        </p>
-
-        <p>
-            <input type="radio" id="d" name="resposta" value="d">
-            <label for="d"> D) Planning Backlog </label>
-        </p>
-
-        <div><b>Questão 2:</b> Qual o nome da lista de tarefas da Sprint desenvolvidas pelo time?</div>
-
-        <p>
-            <input type="radio" id="a" name="resposta" value="a">
-            <label for="a"> A) Product Increment </label>
-        </p>
-
-        <p>
-            <input type="radio" id="b" name="resposta" value="b">
-            <label for="b"> B) Product Owner </label>
-        </p>
-
-        <p>
-            <input type="radio" id="c" name="resposta" value="c" data-resposta="true">
-            <label for="c"> C) Product Meeting </label>
-        </p>
-
-        <p>
-            <input type="radio" id="d" name="resposta" value="d">
-            <label for="d"> D) Planning Backlog </label>
-        </p>
-
-        <div><b>Questão 3:</b> Como é chamada a a soma de todos os itens completos em uma Sprint?</div>
-
-        <p>
-            <input type="radio" id="a" name="resposta" value="a">
-            <label for="a"> A) Product Increment </label>
-        </p>
-
-        <p>
-            <input type="radio" id="b" name="resposta" value="b">
-            <label for="b"> B) Product Owner </label>
-        </p>
-
-        <p>
-            <input type="radio" id="c" name="resposta" value="c" data-resposta="true">
-            <label for="c"> C) Product Meeting </label>
-        </p>
-
-        <p>
-            <input type="radio" id="d" name="resposta" value="d">
-            <label for="d"> D) Planning Backlog </label>
-        </p>
-    </div>
-    <a href="/conclusao2">
-        <button class="button">
-            <h2><i><b>Finalizar</b></i></h2>
-        </button>
+{% extends "base.html" %}
+{% block title %} Teste 2 {% endblock %}
+{% block content %}
+<header>
+    <a href="/modulo2">
+        <img src="../static/img/logo.png" alt="logo">
     </a>
-</body>
+    <div class="title">
+        <h1><b>Bem-vindo ao Teste de Aprendizado Módulo 2</b>
+            <h1>
+    </div>
+</header>
 
-</html>
+<div class="content">
+
+    <div><b>Questão 1:</b> Qual o nome do documento que contém a lista de tarefas do produto, a ser desenvolvida
+        pelo time na metodologia Scrum?</div>
+
+    <div>
+        <input type="radio" id="a" name="resposta" value="a">
+        <label for="a"> A) Product Increment </label>
+    </div>
+
+    <div>
+        <input type="radio" id="b" name="resposta" value="b">
+        <label for="b"> B) Product Owner </label>
+    </div>
+
+    <div>
+        <input type="radio" id="c" name="resposta" value="c" data-resposta="true">
+        <label for="c"> C) Product Meeting </label>
+    </div>
+
+    <div>
+        <input type="radio" id="d" name="resposta" value="d">
+        <label for="d"> D) Planning Backlog </label>
+    </div>
+
+    <div><b>Questão 2:</b> Qual o nome da lista de tarefas da Sprint desenvolvidas pelo time?</div>
+
+    <div>
+        <input type="radio" id="a" name="resposta" value="a">
+        <label for="a"> A) Product Increment </label>
+    </div>
+
+    <div>
+        <input type="radio" id="b" name="resposta" value="b">
+        <label for="b"> B) Product Owner </label>
+    </div>
+
+    <div>
+        <input type="radio" id="c" name="resposta" value="c" data-resposta="true">
+        <label for="c"> C) Product Meeting </label>
+    </div>
+
+    <div>
+        <input type="radio" id="d" name="resposta" value="d">
+        <label for="d"> D) Planning Backlog </label>
+    </div>
+
+    <div><b>Questão 3:</b> Como é chamada a a soma de todos os itens completos em uma Sprint?</div>
+
+    <div>
+        <input type="radio" id="a" name="resposta" value="a">
+        <label for="a"> A) Product Increment </label>
+    </div>
+
+    <div>
+        <input type="radio" id="b" name="resposta" value="b">
+        <label for="b"> B) Product Owner </label>
+    </div>
+
+    <div>
+        <input type="radio" id="c" name="resposta" value="c" data-resposta="true">
+        <label for="c"> C) Product Meeting </label>
+    </div>
+
+    <div>
+        <input type="radio" id="d" name="resposta" value="d">
+        <label for="d"> D) Planning Backlog </label>
+    </div>
+</div>
+<a href="/conclusao2">
+    <button class="button">
+        <h2><i><b>Finalizar</b></i></h2>
+    </button>
+</a>
+{% endblock %}

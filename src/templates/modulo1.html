@@ -1,49 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "base.html" %}
+{% block title %} Módulo 1 {% endblock %}
+{% block content %}
+<header>
+    <a href="/">
+        <img src="../static/img/logo.png" alt="">
+    </a>
+</header>
+<h1 class="titulo">Módulo 1: Scrum Team</h1>
+<p class="texto">
+    Bem-vindo! Aqui no primeiro módulo do curso desvendaremos os papéis cruciais ddo Time Scum: Scrum Master,
+    Product Owner (Dono do Produto) e a Equipe de Desenvolvimento. Prepare-se para explorar a essência e as
+    responsabilidades de cada função, bem como as práticas ágeis que impulsionam equipes rumo ao sucesso.
+</p>
+<div class="card">
+    <a href="/scrum_master">
+        <img class="card-modulo" src="../static/img/sm.png" alt="Scrum Master">
+        <h2 class="card-titulo">Scrum Master</h2>
+    </a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 1</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/css/normalize.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
+    <a href="/product_owner">
+        <img class="card-modulo" src="../static/img/po.png" alt="Product Owner">
+        <h2 class="card-title">Product Owner</h2>
+    </a>
 
-<body>
-    <header>
-        <a href="/">
-            <img src="../static/img/logo.png" alt="">
-        </a>
-    </header>
-    <h1 class="titulo">Módulo 1: Scrum Team</h1>
-    <p class="texto">
-        Bem-vindo! Aqui no primeiro módulo do curso desvendaremos os papéis cruciais ddo Time Scum: Scrum Master,
-        Product Owner (Dono do Produto) e a Equipe de Desenvolvimento. Prepare-se para explorar a essência e as
-        responsabilidades de cada função, bem como as práticas ágeis que impulsionam equipes rumo ao sucesso.
-    </p>
-    <div class="card">
-        <a href="/scrum_master">
-            <img class="card-modulo" src="../static/img/sm.png" alt="Scrum Master">
-            <h2 class="card-titulo">Scrum Master</h2>
-        </a>
+    <a href="/dev_team">
+        <img class="card-modulo" src="../static/img/dt.png" alt="Dev Team">
+        <h2 class="card-titulo">Dev Team</h2>
+    </a>
 
-        <a href="/product_owner">
-            <img class="card-modulo" src="../static/img/po.png" alt="Product Owner">
-            <h2 class="card-title">Product Owner</h2>
-        </a>
-
-        <a href="/dev_team">
-            <img class="card-modulo" src="../static/img/dt.png" alt="Dev Team">
-            <h2 class="card-titulo">Dev Team</h2>
-        </a>
-
-        <a href="/teste_modulo1">
-            <img class="card-modulo" src="../static/img/exame.png" alt="Exame">
-            <h2 class="card-title">Exame</h2>
-        </a>
-    </div>
-</body>
-
-</html>
+    <a href="/teste_modulo1">
+        <img class="card-modulo" src="../static/img/exame.png" alt="Exame">
+        <h2 class="card-title">Exame</h2>
+    </a>
+</div>
+{% endblock %}

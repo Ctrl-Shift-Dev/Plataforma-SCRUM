@@ -1,34 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conclusão</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/css/normalize.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-
-<body>
-    <header>
-        <a href="/" class="logo-button">
-            <img src="../static/img/logo.png" alt="logo">
-        </a>
-    </header>
-
-    <div class="congratulations">
-        <h1><b>Parabéns! Você concluiu com sucesso o Módulo 3 do nosso curso. Continue assim em sua jornada de
-                aprendizado!</b>
-            <h1>
-    </div>
-
-    <a href="/">
-        <button class="button">
-            <h2><i><b>Finalizar</b></i></h2>
-        </button>
+{% extends "base.html" %}
+{% block title %} Conclusão {% endblock %}
+{% block content %}
+<header>
+    <a href="/" class="logo-button">
+        <img src="../static/img/logo.png" alt="logo">
     </a>
-</body>
+</header>
 
-</html>
+<div class="congratulations">
+    <h1><b>Parabéns! Você concluiu com sucesso o Módulo 3 do nosso curso. Continue assim em sua jornada de
+            aprendizado!</b>
+        <h1>
+</div>
+
+<a href="/">
+    <button class="button">
+        <h2><i><b>Finalizar</b></i></h2>
+    </button>
+</a>
+{% endblock %}

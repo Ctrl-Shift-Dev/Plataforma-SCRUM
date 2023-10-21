@@ -1,64 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "base.html" %}
+{% block title %} Proudct Backlog {% endblock %}
+{% block content %}
+<header>
+    <a href="/">
+        <img src="../static/img/logo.png" alt="">
+    </a>
+</header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product backlog</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/css/normalize.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
+<h2 class="subtitulo">Conceitos e Fundamentos do Product Backlog:</h2>
+<p>O Product Backlog é uma lista priorizada de todos os requisitos, funcionalidades, melhorias e correções que devem
+    ser implementados em um projeto. Ele é uma representação dinâmica das necessidades e expectativas do cliente ou
+    do produto em desenvolvimento. Os itens no Product Backlog são organizados em ordem de prioridade, com os mais
+    importantes no topo da lista.</p>
 
-<body>
-    <header>
-        <a href="/">
-            <img src="../static/img/logo.png" alt="">
-        </a>
-    </header>
+<h2 class="subtitulo">Exemplos práticos do Product Backlog:</h2>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Desenvolvimento de Recursos de Login:</span> Um item do
+    Product Backlog é "Implementar um sistema de login seguro". Para
+    a Sprint atual, a equipe detalha as tarefas necessárias, como "Projetar a interface de login", "Desenvolver a
+    funcionalidade de validação de senha" e "Configurar a autenticação de dois fatores". Essas tarefas fazem parte
+    do Sprint Backlog. </p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Correção de Bugs Prioritários:</span>A equipe recebe uma
+    solicitação urgente para corrigir três bugs críticos relatados pelos usuários. Eles
+    identificam esses bugs como itens do Sprint Backlog para uma Sprint específica, detalhando as etapas necessárias
+    para investigar e resolver cada problema.
+</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Desenvolvimento de uma nova funcionalidade:</span>Um novo
+    recurso é solicitado pelo Product Owner. A equipe desdobra esse pedido em tarefas específicas, como
+    "Realizar pesquisa de mercado para entender os requisitos do novo recurso", "Projeto de interface de usuário" e
+    "Desenvolvimento do código". Todas essas tarefas se tornam parte do Sprint Backlog</p>
 
-    <h2 class="subtitulo">Conceitos e Fundamentos do Product Backlog:</h2>
-    <p>O Product Backlog é uma lista priorizada de todos os requisitos, funcionalidades, melhorias e correções que devem
-        ser implementados em um projeto. Ele é uma representação dinâmica das necessidades e expectativas do cliente ou
-        do produto em desenvolvimento. Os itens no Product Backlog são organizados em ordem de prioridade, com os mais
-        importantes no topo da lista.</p>
-  
-    <h2 class="subtitulo">Exemplos práticos do Product Backlog:</h2>
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Desenvolvimento de Recursos de Login:</span> Um item do
-        Product Backlog é "Implementar um sistema de login seguro". Para
-        a Sprint atual, a equipe detalha as tarefas necessárias, como "Projetar a interface de login", "Desenvolver a
-        funcionalidade de validação de senha" e "Configurar a autenticação de dois fatores". Essas tarefas fazem parte
-        do Sprint Backlog. </p>
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Correção de Bugs Prioritários:</span>A equipe recebe uma
-        solicitação urgente para corrigir três bugs críticos relatados pelos usuários. Eles
-        identificam esses bugs como itens do Sprint Backlog para uma Sprint específica, detalhando as etapas necessárias
-        para investigar e resolver cada problema.
-    </p>
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Desenvolvimento de uma nova funcionalidade:</span>Um novo
-        recurso é solicitado pelo Product Owner. A equipe desdobra esse pedido em tarefas específicas, como
-        "Realizar pesquisa de mercado para entender os requisitos do novo recurso", "Projeto de interface de usuário" e
-        "Desenvolvimento do código". Todas essas tarefas se tornam parte do Sprint Backlog</p>
-    
 <!-- passar pagina -->
 
-    <span class="flecha">
-        <a href="/modulo2">
-            <img src="../static/img/flecha esquerda .png" alt="">
-        </a>
-        
-        <a href="/">
-            <img src="../static/img/home.png" alt="back">
-        </a>
-        
-        <a href="/sprint_backlog">
-            <img src="../static/img/flecha direita .png" alt="">
-        </a>
-        
-    </span>
+<span class="flecha">
+    <a href="/modulo2">
+        <img src="../static/img/flecha esquerda .png" alt="">
+    </a>
 
-    
-</body>
+    <a href="/">
+        <img src="../static/img/home.png" alt="back">
+    </a>
 
-</html>
+    <a href="/sprint_backlog">
+        <img src="../static/img/flecha direita .png" alt="">
+    </a>
+
+</span>
+{% endblock %}

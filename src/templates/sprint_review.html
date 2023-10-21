@@ -1,88 +1,74 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "base.html" %}
+{% block title %} Sprint Review {% endblock %}
+{% block content %}
+<header>
+    <a href="/">
+        <img src="../static/img/logo.png" alt="">
+    </a>
+</header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint Review</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/css/normalize.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
+<h2 class="subtitulo">Conceitos da Sprint Review:</h2>
 
-<body>
-    <header>
-        <a href="home.html">
-            <img src="../static/img/logo.png" alt="">
-        </a>
-    </header>
+<p>
+    O Sprint Review é uma reunião que ocorre ao final de cada sprint no método Scrum. Sua
+    finalidade é demonstrar o trabalho concluído durante o decorrer da sprint e obter feedback dos
+    stakeholders, incluindo o Product Owner, clientes, usuários finais ou outros interessados. O
+    Sprint Review é uma oportunidade para a equipe de desenvolvimento mostrar suas funcionalidades
+    ou melhorias implementadas e discutir como o produto evoluiu durante todo o processo.
+</p>
 
-    <h2 class="subtitulo">Conceitos da Sprint Review:</h2>
+<h2 class="subtitulo">Fundamentos da Sprint Review:</h2>
 
-    <p>
-        O Sprint Review é uma reunião que ocorre ao final de cada sprint no método Scrum. Sua
-        finalidade é demonstrar o trabalho concluído durante o decorrer da sprint e obter feedback dos
-        stakeholders, incluindo o Product Owner, clientes, usuários finais ou outros interessados. O
-        Sprint Review é uma oportunidade para a equipe de desenvolvimento mostrar suas funcionalidades
-        ou melhorias implementadas e discutir como o produto evoluiu durante todo o processo.
-    </p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Demonstração do trabalho concluído:</span> Durante o Sprint
+    Review, a equipe de desenvolvimento
+    apresenta as funcionalidades ou melhorias que foram implementadas durante a sprint.
+    Isso envolve demonstrar o software ou produto, mostrando como ele funciona na prática.</p>
 
-    <h2 class="subtitulo">Fundamentos da Sprint Review:</h2>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Feedback dos Stakeholders:</span> Os stakeholders, incluindo o
+    Product Owner e outros
+    interessados, têm a oportunidade de fornecer feedback sobre o que foi entregue. Isso pode
+    incluir sugestões, perguntas ou até mesmo alterações de prioridade com base no que foi
+    demonstrado.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Demonstração do trabalho concluído:</span> Durante o Sprint
-        Review, a equipe de desenvolvimento
-        apresenta as funcionalidades ou melhorias que foram implementadas durante a sprint.
-        Isso envolve demonstrar o software ou produto, mostrando como ele funciona na prática.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Avaliação da Meta da Sprint: </span> Durante a Sprint Review,
+    a equipe verifica se a meta da sprint,
+    definida durante o Sprint Planning, foi alcançada. Isso ajuda a determinar se a sprint foi bem
+    sucedido em atender aos objetivos.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Feedback dos Stakeholders:</span> Os stakeholders, incluindo o
-        Product Owner e outros
-        interessados, têm a oportunidade de fornecer feedback sobre o que foi entregue. Isso pode
-        incluir sugestões, perguntas ou até mesmo alterações de prioridade com base no que foi
-        demonstrado.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Adaptação e Planejamento Futuro: </span> Com base no feedback
+    recebido e na demonstração do
+    trabalho, a equipe e o Product Owner podem adaptar o Product Backlog, priorizando e
+    planejando a próximo sprint com base no que foi aprendido durante a Sprint Review.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Avaliação da Meta da Sprint: </span> Durante a Sprint Review,
-        a equipe verifica se a meta da sprint,
-        definida durante o Sprint Planning, foi alcançada. Isso ajuda a determinar se a sprint foi bem
-        sucedido em atender aos objetivos.</p>
+<h2 class="subtitulo">Exemplos Práticos da Sprint Review:</h2>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Adaptação e Planejamento Futuro: </span> Com base no feedback
-        recebido e na demonstração do
-        trabalho, a equipe e o Product Owner podem adaptar o Product Backlog, priorizando e
-        planejando a próximo sprint com base no que foi aprendido durante a Sprint Review.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Desenvolvimento do Software: </span> Uma equipe de
+    desenvolvimento de software realiza uma
+    Sprint Review ao final de uma sprint de duas semanas. Durante a reunião, eles demonstram as
+    novas funcionalidades que foram implementadas, como uma página de perfil do usuário e uma
+    funcionalidade de pesquisa avançada. O Product Owner, juntamente com representantes de
+    marketing e suporte ao cliente, fornecem feedback sobre a usabilidade e a adequação dessas
+    funcionalidades às necessidades do cliente.</p>
 
-    <h2 class="subtitulo">Exemplos Práticos da Sprint Review:</h2>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Design de Produto: </span> Uma equipe de design de produto
+    realiza uma Sprint Review após uma
+    sprint de três semanas. Eles mostram os protótipos e as soluções de design que
+    desenvolveram durante a sprint. O feedback é fornecido por stakeholders, incluindo gerentes
+    de produtos e desenvolvedores, que avaliam a viabilidade técnica das propostas de design.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Desenvolvimento do Software: </span> Uma equipe de
-        desenvolvimento de software realiza uma
-        Sprint Review ao final de uma sprint de duas semanas. Durante a reunião, eles demonstram as
-        novas funcionalidades que foram implementadas, como uma página de perfil do usuário e uma
-        funcionalidade de pesquisa avançada. O Product Owner, juntamente com representantes de
-        marketing e suporte ao cliente, fornecem feedback sobre a usabilidade e a adequação dessas
-        funcionalidades às necessidades do cliente.</p>
+<!-- passar pagina -->
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Design de Produto: </span> Uma equipe de design de produto
-        realiza uma Sprint Review após uma
-        sprint de três semanas. Eles mostram os protótipos e as soluções de design que
-        desenvolveram durante a sprint. O feedback é fornecido por stakeholders, incluindo gerentes
-        de produtos e desenvolvedores, que avaliam a viabilidade técnica das propostas de design.</p>
+<span class="flecha">
+    <a href="/daily_scrum">
+        <img src="../static/img/flecha esquerda .png" alt="">
+    </a>
 
-    <!-- passar pagina -->
+    <a href="/">
+        <img src="../static/img/home.png" alt="back">
+    </a>
 
-    <span class="flecha">
-        <a href="/daily_scrum">
-            <img src="../static/img/flecha esquerda .png" alt="">
-        </a>
-        
-        <a href="/">
-            <img src="../static/img/home.png" alt="back">
-        </a>
-        
-        <a href="/retrospective">
-            <img src="../static/img/flecha direita .png" alt="">
-        </a>
-    </span>
-
-</body>
-
-</html>
+    <a href="/retrospective">
+        <img src="../static/img/flecha direita .png" alt="">
+    </a>
+</span>
+{% endblock %}

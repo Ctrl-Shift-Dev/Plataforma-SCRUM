@@ -1,114 +1,98 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "base.html" %}
+{% block title %} Daily Scrum {% endblock %}
+{% block content %}
+<header>
+    <a href="/">
+        <img src="../static/img/logo.png" alt="">
+    </a>
+</header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dayle Scrum</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/css/normalize.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
+<h2 class="subtitulo">Conceitos da Reunião de Daily Scrum:</h2>
 
-<body>
-    <header>
-        <a href="/">
-            <img src="../static/img/logo.png" alt="">
-        </a>
-    </header>
+<p>A dayle Standup, também conhecida como Daily Scrum ou reunião diária, é uma cerimônia
+    fundamental dentro do métodologia ágil Scrum. É uma breve reunião diária realizada pela
+    equipe de desenvolvimento para sincronizar as atividades, compartilhar atualizações dos
+    trabalhos realizados por cada um da equipe e identificar obstáculos que podem impedir o
+    progresso do projeto.</p>
 
-    <h2 class="subtitulo">Conceitos da Reunião de Daily Scrum:</h2>
+<h2 class="subtitulo">Fundamentos da Reunião de Daily Scrum:</h2>
 
-    <p>A dayle Standup, também conhecida como Daily Scrum ou reunião diária, é uma cerimônia
-        fundamental dentro do métodologia ágil Scrum. É uma breve reunião diária realizada pela
-        equipe de desenvolvimento para sincronizar as atividades, compartilhar atualizações dos
-        trabalhos realizados por cada um da equipe e identificar obstáculos que podem impedir o
-        progresso do projeto.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Reunião Diária: </span> O Daily Scrum é uma reunião diária
+    curta, geralmente com duração máxima
+    de 15 minutos. Ela ocorre todos os dias, no mesmo horário e local, para que a equipe possa
+    sincronizar suas atividades.</p>
 
-    <h2 class="subtitulo">Fundamentos da Reunião de Daily Scrum:</h2>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Objetivo:</span> O objetivo do Daily Scrum é permitir que a
+    equipe revise o progresso do trabalho
+    desde a última reunião diária, planeje o trabalho para o dia seguinte e identifique quaisquer
+    obstáculos ou impedimentos que possam estar afetando o progresso.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Reunião Diária: </span> O Daily Scrum é uma reunião diária
-        curta, geralmente com duração máxima
-        de 15 minutos. Ela ocorre todos os dias, no mesmo horário e local, para que a equipe possa
-        sincronizar suas atividades.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Três Perguntas-chaves:</span> Durante o Daily Scrum, cada
+    membro da equipe responde a três
+    perguntas:</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Objetivo:</span> O objetivo do Daily Scrum é permitir que a
-        equipe revise o progresso do trabalho
-        desde a última reunião diária, planeje o trabalho para o dia seguinte e identifique quaisquer
-        obstáculos ou impedimentos que possam estar afetando o progresso.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">A. O que fiz ontem?</span> - Cada membro compartilha o que
+    realizou desde a última reunião diária.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Três Perguntas-chaves:</span> Durante o Daily Scrum, cada
-        membro da equipe responde a três
-        perguntas:</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">B. O que farei hoje?</span> - Cada membro descreve as tarefas
+    que planeja realizar durante o dia.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">A. O que fiz ontem?</span> - Cada membro compartilha o que
-        realizou desde a última reunião diária.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">C. Há algum impedimento no meu caminho?</span> - Os membros da
+    equipe relatam quaisquer
+    obstáculos ou problemas que estejam impedindo o progresso do trabalho.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">B. O que farei hoje?</span> - Cada membro descreve as tarefas
-        que planeja realizar durante o dia.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Transparência:</span> A reunião promove a transparência ao
+    permitir que todos na equipe tenham
+    uma compreensão clara do que está acontecendo e dos desafios que estão sendo enfrentados.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">C. Há algum impedimento no meu caminho?</span> - Os membros da
-        equipe relatam quaisquer
-        obstáculos ou problemas que estejam impedindo o progresso do trabalho.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Scrum Master:</span> O Scrum Master facilita o Daily Scrum,
+    garantindo que a reunião siga as
+    diretrizes e ajude a remover quaisquer impedimentos relatados pela equipe.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Transparência:</span> A reunião promove a transparência ao
-        permitir que todos na equipe tenham
-        uma compreensão clara do que está acontecendo e dos desafios que estão sendo enfrentados.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Interação Constante:</span> O Daily Scrum faz parte de um
+    ciclo contínuo de inspeção e adaptação,
+    garantindo que a equipe permaneça focada em seus objetivos e faça ajustes conforme necessário.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Scrum Master:</span> O Scrum Master facilita o Daily Scrum,
-        garantindo que a reunião siga as
-        diretrizes e ajude a remover quaisquer impedimentos relatados pela equipe.</p>
+<h2 class="subtitulo">Exemplos Práticos da Reunião de Daily Scrum:</h2>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Interação Constante:</span> O Daily Scrum faz parte de um
-        ciclo contínuo de inspeção e adaptação,
-        garantindo que a equipe permaneça focada em seus objetivos e faça ajustes conforme necessário.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">1. Frequência e hora:</span> A equipe realiza a daily Standup
+    todos os dias as 9:00 da manhã</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">2. Tempo Limitado:</span> A equipe concorda em manter a
+    reunião estritamente dentro de 15 minutos para garantir que seja eficiente.</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">3. Três Perguntas Chaves:</span></p>
 
-    <h2 class="subtitulo">Exemplos Práticos da Reunião de Daily Scrum:</h2>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Membro A: </span> “desde a últma reunião, finalizei a
+    implementação do recurso de ordenação das tarefas e prioridades. Planejo começar a trabalhar na integração
+    com as notificações push até a próxima reunião. Não estou enfrentando nenhum
+    impedimento para realizar minhas tarefas”</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">1. Frequência e hora:</span> A equipe realiza a daily Standup
-        todos os dias as 9:00 da manhã</p>
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">2. Tempo Limitado:</span> A equipe concorda em manter a
-        reunião estritamente dentro de 15 minutos para garantir que seja eficiente.</p>
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">3. Três Perguntas Chaves:</span></p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Membro B:</span> “Nos ultimos dias, trabalhei na resolução de
+    alguns bugs relatados
+    pelos usuários. Para a próxima reunião, pretendo começar a trabalhar na melhoria
+    da interface do usuário. Não tenho impedimentos no momento para realizar as
+    tarefas demandadas para mim”</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Membro A: </span> “desde a últma reunião, finalizei a
-        implementação do recurso de ordenação das tarefas e prioridades. Planejo começar a trabalhar na integração
-        com as notificações push até a próxima reunião. Não estou enfrentando nenhum
-        impedimento para realizar minhas tarefas”</p>
+<p><span style="color:rgb(0, 0, 8);font-weight:bold;">Membro C:</span> “Conclui a revisão do código do Membro A e ajudei
+    a testar o recurso
+    de ordenação de tarefas. Vou continuar auxiliando na integração com notificações
+    Push até a próxima reunião. Não há impedimentos para mim quanto a realização
+    das minhas tarefas”.</p>
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Membro B:</span> “Nos ultimos dias, trabalhei na resolução de
-        alguns bugs relatados
-        pelos usuários. Para a próxima reunião, pretendo começar a trabalhar na melhoria
-        da interface do usuário. Não tenho impedimentos no momento para realizar as
-        tarefas demandadas para mim”</p>
+<!-- passar pagina -->
 
-    <p><span style="color:rgb(0, 0, 8);font-weight:bold;">Membro C:</span> “Conclui a revisão do código do Membro A e ajudei a testar o recurso
-        de ordenação de tarefas. Vou continuar auxiliando na integração com notificações
-        Push até a próxima reunião. Não há impedimentos para mim quanto a realização
-        das minhas tarefas”.</p>
-
-    <!-- passar pagina -->
-
-    <span class="flecha">
-        <a href="/sprint_plannig">
-            <img src="../static/img/flecha esquerda .png" alt="">
-        </a>
+<span class="flecha">
+    <a href="/sprint_plannig">
+        <img src="../static/img/flecha esquerda .png" alt="">
+    </a>
 
 
-        <a href="/">
-            <img src="../static/img/home.png" alt="back">
-        </a>
+    <a href="/">
+        <img src="../static/img/home.png" alt="back">
+    </a>
 
-        <a href="/sprint_review">
-            <img src="../static/img/flecha direita .png" alt="">
-        </a>
+    <a href="/sprint_review">
+        <img src="../static/img/flecha direita .png" alt="">
+    </a>
 
-    </span>
-
-
-
-
-</body>
-
-</html>
+</span>
+{% endblock %}

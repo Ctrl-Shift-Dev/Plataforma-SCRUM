@@ -1,83 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "base.html" %}
+{% block title %} Scrum Master {% endblock %}
+{% block content %}
+<header>
+    <a href="/">
+        <img src="../static/img/logo.png" alt="">
+    </a>
+</header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrum Master</title>
-    <link rel="stylesheet" href=" ">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/css/normalize.css">
+<h2 class="subtitulo">Scrum Master: Conceitos e Fundamentos Básicos:</h2>
 
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
+<p>O Scrum Master é um papel essencial na metodologia ágil Scrum, focado em facilitar o processo de
+    desenvolvimento, promover a colaboração da equipe e remover obstáculos para o sucesso do projeto.
 
-<body>
-    <header>
-        <a href="/">
-            <img src="../static/img/logo.png" alt="">
-        </a>
-    </header>
+    O Scrum Master desempenha um papel de liderança ao promover os valores e princípios ágeis, orientando a
+    equipe para alcançar a autossuficiência e incentivando a melhoria contínua. Ele atua como um mentor,
+    capacitando a equipe a adotar práticas ágeis e a cumprir seus compromissos.</p>
 
-        <h2 class="subtitulo">Scrum Master: Conceitos e Fundamentos Básicos:</h2>
+<h2 class="subtitulo"> Exemplos Práticos:</h2>
 
-        <p>O Scrum Master é um papel essencial na metodologia ágil Scrum, focado em facilitar o processo de
-            desenvolvimento, promover a colaboração da equipe e remover obstáculos para o sucesso do projeto.
+<p><b>O Scrum Master desempenha várias funções essenciais:</b></p>
 
-            O Scrum Master desempenha um papel de liderança ao promover os valores e princípios ágeis, orientando a
-            equipe para alcançar a autossuficiência e incentivando a melhoria contínua. Ele atua como um mentor,
-            capacitando a equipe a adotar práticas ágeis e a cumprir seus compromissos.</p>
+<p><b>1. Facilitador de Reuniões:</b> Ele organiza e facilita reuniões-chave, como a Daily Scrum, Sprint
+    Planning, Sprint Review e Sprint Retrospective. Isso assegura que a equipe compartilhe informações, planeje
+    e aprenda com as experiências passadas.
 
-        <h2 class="subtitulo"> Exemplos Práticos:</h2>
+<p><b>2. Priorização do Trabalho:</b> Ao analisar o feedback dos usuários e as necessidades de negócios, você
+    decide priorizar a adição de um recurso de pagamento online na próxima iteração do aplicativo, pois isso é
+    crucial para melhorar a experiência do cliente.</p>
 
-        <p><b>O Scrum Master desempenha várias funções essenciais:</b></p>
+<p><b>3. Tomada de Decisões:</b> Durante o desenvolvimento, a equipe encontra um dilema técnico. Como P.O., você
+    decide adiar a implementação de um recurso menos crítico para resolver o problema técnico imediatamente,
+    mantendo a qualidade do produto.</p>
 
-        <p><b>1. Facilitador de Reuniões:</b> Ele organiza e facilita reuniões-chave, como a Daily Scrum, Sprint
-            Planning, Sprint Review e Sprint Retrospective. Isso assegura que a equipe compartilhe informações, planeje
-            e aprenda com as experiências passadas.
+<p><b>4. Feedback dos Usuários:</b> Após lançar o aplicativo, você coleta feedback dos usuários. Com base nesse
+    feedback, você decide adicionar uma funcionalidade de classificação de restaurantes, pois os usuários
+    expressaram o desejo de compartilhar suas experiências.</p>
 
-        <p><b>2. Priorização do Trabalho:</b> Ao analisar o feedback dos usuários e as necessidades de negócios, você
-            decide priorizar a adição de um recurso de pagamento online na próxima iteração do aplicativo, pois isso é
-            crucial para melhorar a experiência do cliente.</p>
+<p><b>5. Colaboração com a Equipe:</b> Você trabalha em estreita colaboração com a equipe de desenvolvimento,
+    compartilhando insights dos clientes e esclarecendo requisitos à medida que surgem. Essa colaboração garante
+    que o produto esteja alinhado com as necessidades do mercado em constante evolução.</p>
 
-        <p><b>3. Tomada de Decisões:</b> Durante o desenvolvimento, a equipe encontra um dilema técnico. Como P.O., você
-            decide adiar a implementação de um recurso menos crítico para resolver o problema técnico imediatamente,
-            mantendo a qualidade do produto.</p>
+<p>Em resumo, o Product Owner desempenha um papel vital em traduzir a visão do produto em recursos tangíveis,
+    priorizando o trabalho para atender às necessidades dos usuários e tomando decisões informadas para garantir
+    o sucesso do produto. Essa aplicação prática ilustra como o P.O. é essencial na criação de produtos que
+    agregam valor aos clientes.</p>
 
-        <p><b>4. Feedback dos Usuários:</b> Após lançar o aplicativo, você coleta feedback dos usuários. Com base nesse
-            feedback, você decide adicionar uma funcionalidade de classificação de restaurantes, pois os usuários
-            expressaram o desejo de compartilhar suas experiências.</p>
+<span class="flecha">
+    <a href="/modulo1">
+        <img src="../static/img/flecha esquerda .png" alt="">
+    </a>
 
-        <p><b>5. Colaboração com a Equipe:</b> Você trabalha em estreita colaboração com a equipe de desenvolvimento,
-            compartilhando insights dos clientes e esclarecendo requisitos à medida que surgem. Essa colaboração garante
-            que o produto esteja alinhado com as necessidades do mercado em constante evolução.</p>
+    <a href="/">
+        <img src="../static/img/home.png" alt="back">
+    </a>
 
-        <p>Em resumo, o Product Owner desempenha um papel vital em traduzir a visão do produto em recursos tangíveis,
-            priorizando o trabalho para atender às necessidades dos usuários e tomando decisões informadas para garantir
-            o sucesso do produto. Essa aplicação prática ilustra como o P.O. é essencial na criação de produtos que
-            agregam valor aos clientes.</p>
+    <a href="/product_owner">
+        <img src="../static/img/flecha direita .png" alt="">
+    </a>
+</span>
 
-
-    <!-- passar pagina -->
-
-    <span class="flecha">
-        <a href="/modulo1">
-            <img src="../static/img/flecha esquerda .png" alt="">
-        </a>
-
-        <a href="/">
-            <img src="../static/img/home.png" alt="back">
-        </a>
-
-        <a href="/product_owner">
-            <img src="../static/img/flecha direita .png" alt="">
-        </a>
-    </span>
-
-    </div>
-
-
-</body>
-
-</html>
+</div>
+{% endblock %}
