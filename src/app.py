@@ -1,6 +1,7 @@
-from flask import Flask, render_template
-
-app = Flask("__name__")
+from tkinter.messagebox import QUESTION
+from urllib import request
+from flask import Flask, render_template, request
+app = Flask (__name__)
 
 @app.route('/')
 def home():
@@ -25,11 +26,52 @@ def testemodulo1():
 @app.route('/teste_modulo2')
 def testemodulo2():
     return render_template('teste_modulo2.html')
-      
+
 @app.route('/teste_modulo3')
 def testemodulo3():
     return render_template('teste_modulo3.html')
-   
+
+@app.route('/submit', methods=['POST'])
+def submit():
+    questions = [
+        {
+            'question': 'É objetivo da Sprint Planning no Método Scrum?',
+            'correct_answer': 'c'
+        },
+        {
+            'question': 'Qual é o principal propósito da Daily Scrum no Método Scrum?',
+            'correct_answer': 'c'
+        },
+        {
+            'question': 'O que acontece durante o evento Sprint Review no método Scrum?',
+            'correct_answer': 'b'
+        },
+        {
+            'question': 'Qual é o objetivo da Sprint Retrospective no Método Scrum?',
+            'correct_answer': 'c'
+        }
+    ]
+
+    user_answers = [request.form[f'q{i}'] for i in range(1, 5)]
+    results = []
+
+    for i, answer in enumerate(user_answers):
+        if answer == questions[i]['correct_answer']:
+            results.append(f'Pergunta {i + 1}: Correta')
+        else:
+            results.append(f'Pergunta {i + 1}: Incorreta')
+
+    num_correct = results.count('Pergunta Correta')
+    num_questions = len(questions)
+
+    if num_correct == num_questions:
+        message = "Parabéns! Você acertou todas as perguntas desta etapa!"
+    else:
+        message = "Você completou o quiz. Continue praticando e revise as questões que você errou."
+
+    return render_template('conclusao3.html', results=results, message=message)
+
+
 @app.route('/conclusao1')
 def conclusao1():
     return render_template('conclusao1.html')
@@ -41,7 +83,7 @@ def conclusao2():
 @app.route('/conclusao3')
 def conclusao3():
     return render_template('conclusao3.html')
- 
+                               
 @app.route('/scrum_master')
 def scrummaster():
     return render_template('scrum_master.html')
