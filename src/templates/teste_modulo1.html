@@ -12,77 +12,49 @@
 </header>
 
 <div class="content">
+    
+<form method="POST" action="/corrigir">
+    <h1>Questionário</h1>
 
-    <div><b>Questão 1:</b> Qual dos itens citados abaixo é um dos principais papéis desempenhados pelo Scrum Master
-        na metodologia Scrum?</div>
 
-    <div>
-        <input type="radio" id="a" name="resposta" value="a">
-        <label for="a"> A) Desenvolvimento de software </label>
-    </div>
-    <div>
-        <input type="radio" id="b" name="resposta" value="b">
-        <label for="b"> B) Teste de qualidade </label>
-    </div>
-
-    <div>
-        <input type="radio" id="c" name="resposta" value="c" data-resposta="true">
-        <label for="c"> C) Remoção de obstáculos </label>
+    <div class="question">
+        <div><b>Pergunta 1:</b> Qual é a principal responsabilidade do Scrum Master em relação aos impedimentos no
+            Scrum?</p>
+        </div>
+        <input type="radio" name="q1" value="a">A) Identificar e documentar impedimentos.<br>
+        <input type="radio" name="q1" value="b">B) Resolver todos os impedimentos sozinho.<br>
+        <input type="radio" name="q1" value="c" checked>C) Remover impedimentos que afetam o progresso da equipe.<br>
+        <input type="radio" name="q1" value="d">D) Ignorar os impedimentos e focar apenas nas metas do sprint.<p>
     </div>
 
-    <div>
-        <input type="radio" id="d" name="resposta" value="d">
-        <label for="d"> D) Gerenciamento de projetos </label>
-    </div>
+    <div class="question">
+        <div><b>Pergunta 2:</b> Qual é um dos exemplos práticos de atividades que um Scrum Master pode realizar, conforme mencionado no texto?</p>
+        </div>
+        <input type="radio" name="q1" value="a">A) Gerenciar o backlog do produto.<br>
+        <input type="radio" name="q1" value="b">B) Criar documentação de projeto.<br>
+        <input type="radio" name="q1" value="c" checked>C) Realizar a Reunião de Planejamento da Sprint.<br>
+        <input type="radio" name="q1" value="d">D) Desenvolver código de software.<p>
 
-    <div><b>Questão 2:</b> Qual é o papel do Product Owner (P.O.) em uma equipe ágil de desenvolvimento de software?
-    </div>
+        <div class="question">
+            <div><b>Pergunta 3:</b> De acordo com o texto, qual é uma das responsabilidades fundamentais de um Product Owner?</p>
+        </div>
+        <input type="radio" name="q1" value="a">A) Desenvolver código de software.<br>
+        <input type="radio" name="q1" value="b">B) Gerenciar o backlog do produto.<br>
+        <input type="radio" name="q1" value="c" checked>C) Coletar feedback de usuários para relatórios de bugs.<br>
+        <input type="radio" name="q1" value="d">D) Conduzir reuniões de retrospectiva de sprint.<p>
 
-    <div>
-        <input type="radio" id="a" name="resposta" value="a">
-        <label for="a"> A) Gerenciar o desenvolvimento de código fonte </label>
-    </div>
-    <div>
-        <input type="radio" id="b" name="resposta" value="b">
-        <label for="b"> B) Definir os prazos para as tarefas da equipe </label>
-    </div>
+    <div class="question">
+        <div><b>Pergunta 4:</b> Qual é uma das principais responsabilidades dos membros da equipe de desenvolvimento (Team Dev) mencionada no texto?</p>
+        </div>
+        <input type="radio" name="q1" value="a">A) Definir a visão do produto.<br>
+        <input type="radio" name="q1" value="b">B) Realizar reuniões de retrospectiva da sprint.<br>
+        <input type="radio" name="q1" value="c" checked>C) Escrever código, realizar testes e integrar novos recursos no produto.<br>
+        <input type="radio" name="q1" value="d">D) Priorizar o backlog do produto.<p>
 
-    <div>
-        <input type="radio" id="c" name="resposta" value="c" data-resposta="true">
-        <label for="c"> C) Representar os interesses do cliente, definir e priorizar o backlog do produto </label>
-    </div>
-
-    <div>
-        <input type="radio" id="d" name="resposta" value="d">
-        <label for="d"> D) Facilitar as reuniões diárias de stand-up da equipe </label>
-    </div>
-
-    <div><b>Questão 3:</b> Quais são os principais benefícios do investimento no desenvolvimento da equipe em um
-        projeto?</div>
-
-    <div>
-        <input type="radio" id="a" name="resposta" value="a">
-        <label for="a"> A) Redução dos custos do projeto e aumento da duração do cronograma </label>
-    </div>
-    <div>
-        <input type="radio" id="b" name="resposta" value="b">
-        <label for="b"> B) Melhoria da comunicação interna e aumento da rotatividade da equipe </label>
-    </div>
-
-    <div>
-        <input type="radio" id="c" name="resposta" value="c" data-resposta="true">
-        <label for="c"> C) Aumento da produtividade da equipe e melhoria da qualidade do trabalho </label>
-    </div>
-
-    <div>
-        <input type="radio" id="d" name="resposta" value="d">
-        <label for="d"> D) Diminuição da cooperação entre os membros da equipe e aumento do estresse </label>
-    </div>
-
-</div>
-<a href="/conclusao1">
-    <button class="button">
-        <h2><i><b>Finalizar</b></i></h2>
-    </button>
-</a>
-{% endblock %}
+            </div>
+            <a href="/conclusao1">
+                <button class="button">
+                    <h2><i><b>Finalizar</b></i></h2>
+                </button>
+            </a>
+            {% endblock %}

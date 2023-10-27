@@ -54,38 +54,9 @@ os processos necessários para a fidelização do cliente.
 
   <a href ="https://youtu.be/9_RjVpeYKVo?si=0Un3n2u2dpyAXk-a">Apresentação no Youtube</a>
 
-   #### Backlog da Sprint 1
-
-   ## 📋 Backlog da Sprint <a id="backlogsprint"></a>
-| Responsável | Atividade | Início | Duração | Término |
-| ------- | ------- | ------- | ------- | ------- |
-| Breno | Criação do GitHub do Projeto | 04/09/2023 | 1 | 04/09/2023 |
-| Breno | Elaboração do Backlog do Produto | 04/09/2023 | 8 | 11/09/2023 |
-| Equipe | Estudo da Ferramenta Figma | 04/09/2023 | 3 | 06/09/2023 |
-| Equipe | Estudo da Ferramenta GitHub e Git | 04/09/2023 | 3 | 06/09/2023 |
-| Equipe | Projeção do Protótipo Navegável | 04/09/2023 | 8 | 11/09/2023 |
-| Gabriel / Allan | Montagem do Protótipo / Página Home | 12/09/2023 | 3 | 14/09/2023 |
-| André / Mariane | Montagem do Protótipo / Página Módulo | 15/09/2023 | 6 | 20/09/2023 |
-| Matheus | Revisão do Layout | 21/09/2023 | 2 | 22/09/2023 |
-| Paloma | Elaboração do Slide de Apresentação da Sprint | 18/09/2023 | 5 | 22/09/2023 |
-| Matheus | Gravação do Vídeo de Apresentação | 21/09/2023 | 2 | 22/09/2023 |
-
-  
   ### 2° Sprint
 ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/site_flask.gif)
 
-
-   #### Backlog da Sprint 2
-   ## 📋 Backlog da Sprint <a id="backlogsprint"></a>
-| Responsável | Atividade | Início | Duração | Término |
-| ------- | ------- | ------- | ------- | ------- |
-| Gabriel | Página Home / Barra de Navegação | 29/09/2023 | 4 | 02/10/2023 |
-| Breno / Gabriel | Módulo 1 | 29/09/2023 | 10 | 08/10/2023 |
-| Allan / Mariane | Módulo 2 | 29/09/2023 | 14 | 12/10/2023 |
-| André / Paloma | Módulo 3 | 29/09/2023 | 12 | 10/10/2023 |
-| Matheus | Sistema de Avaliação dos Módulos | 29/09/2023 | 9 | 06/10/2023 |
-| Paloma | Elaboração do Slide de Apresentação da Sprint | 09/10/2023 | 5 | 13/10/2023 |
-| Breno | Montagem do Gif (vídeo do protótipo) | 13/10/2023 | 1 | 13/10/2023|
 
 ## 🗂 Requisitos <a id="requisitos"></a>
 <details>
