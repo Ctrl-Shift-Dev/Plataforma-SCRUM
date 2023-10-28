@@ -22,10 +22,92 @@ def modulo3():
 @app.route('/teste_modulo1')
 def testemodulo1():
     return render_template('teste_modulo1.html')
+
+@app.route('/enviar', methods=['POST']) 
+def enviar():
+    questions = [
+        {
+            'question': 'Qual é a principal responsabilidade do Scrum Master em relação aos impedimentos no Scrum?',
+            'correct_answer': 'c'
+        },
+        {
+            'question': 'Qual é um dos exemplos práticos de atividades que um Scrum Master pode realizar, conforme mencionado no texto?',
+            'correct_answer': 'c'
+        },
+        {
+            'question': 'De acordo com o texto, qual é uma das responsabilidades fundamentais de um Product Owner?',
+            'correct_answer': 'c'
+        },
+        {
+            'question': 'Qual é uma das principais responsabilidades dos membros da equipe de desenvolvimento (Team Dev) mencionada no texto?',
+            'correct_answer': 'c'
+        }
+    ]
+
+    user_answers = [request.form[f'q{i}'] for i in range(1, 5)]
+    results = []
+
+    for i, answer in enumerate(user_answers):
+        if answer == questions[i]['correct_answer']:
+            results.append(f'Pergunta {i + 1}: Correta')
+        else:
+            results.append(f'Pergunta {i + 1}: Incorreta')
+
+    num_correct = results.count('Pergunta Correta')
+    num_questions = len(questions)
+
+    if num_correct == num_questions:
+        message = "Parabéns! Você acertou todas as perguntas desta etapa!"
+    else:
+        message = "Você completou o quiz. Continue praticando e revise as questões que você errou."
+
+    return render_template('conclusao1.html', results=results, message=message)
+
        
 @app.route('/teste_modulo2')
 def testemodulo2():
     return render_template('teste_modulo2.html')
+
+@app.route('/send', methods=['POST']) 
+def send():
+    questions = [
+        {
+            'question': 'Qual das seguintes afirmações sobre o Product Backlog está correta?',
+            'correct_answer': 'd'
+        },
+        {
+            'question': 'Qual é a principal função da Sprint Backlog?',
+            'correct_answer': 'd'
+        },
+        {
+            'question': 'O que é um Product Increment?',
+            'correct_answer': 'c'
+        },
+        {
+            'question': 'Quem é geralmente responsável por priorizar os itens no Product Backlog?',
+            'correct_answer': 'd'
+        }
+    ]
+
+    user_answers = [request.form[f'q{i}'] for i in range(1, 5)]
+    results = []
+
+    for i, answer in enumerate(user_answers):
+        if answer == questions[i]['correct_answer']:
+            results.append(f'Pergunta {i + 1}: Correta')
+        else:
+            results.append(f'Pergunta {i + 1}: Incorreta')
+
+    num_correct = results.count('Pergunta Correta')
+    num_questions = len(questions)
+
+    if num_correct == num_questions:
+        message = "Parabéns! Você acertou todas as perguntas desta etapa!"
+    else:
+        message = "Você completou o quiz. Continue praticando e revise as questões que você errou."
+
+    return render_template('conclusao2.html', results=results, message=message)
+
 
 @app.route('/teste_modulo3')
 def testemodulo3():
