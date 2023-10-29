@@ -15,14 +15,16 @@ p {
 }
 
 .titulo {
-    color: #000;
-    text-align: center;
-    font-family: Kanit;
-    font-size: 64px;
+    font-size: 45px;
     font-style: italic;
     font-weight: 600;
-    line-height: normal;
-    margin-top: 32px;
+    line-height: 67px;
+    text-align: center;
+    letter-spacing: -4px;
+    margin: 0;
+    margin-left: 485px;
+    color: #ffffff;
+    font-weight: bold;  
 }
 
 .texto {
@@ -33,7 +35,7 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 32px 346px 32px 346px;
+
 }
 
 .card {
@@ -50,12 +52,12 @@ p {
     height: 335px;
     margin: 25px;
     border-radius: 30px;
-    background-color: #9E957D8C;
+    background-color: rgb(76, 176, 243);
     text-decoration: none;
 }
 
 .card a:hover {
-    background-color: bisque;
+    background-color: #0379ffe1;
 }
 
 .card img {
@@ -66,26 +68,23 @@ p {
 }
 
 .card h2 {
-    color: #000;
+    color: #ffffff;
     text-align: center;
     font-family: Arial;
-    font-size: 34px;
+    font-size: 30px;
     font-style: italic;
     font-weight: 700;
+    letter-spacing: -2px;
     line-height: normal;
     margin-top: 20px;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 20px;
     align-items: center;
-    background-color: #15abc3;
-    border-bottom: 5px solid rgb(0, 0, 0);
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(76, 176, 243);
 
 }
 
