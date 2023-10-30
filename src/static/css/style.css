@@ -180,3 +180,11 @@ header {
     font-size: 19px;
     padding: 20px;
 }
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 20%;
+    transform: translateY(-14%);
+} 
+
