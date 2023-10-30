@@ -61,7 +61,7 @@ def enviar():
     num_questions = len(questions)
 
     if num_correct < num_questions:
-        message = "Você completou o quiz. Continue praticando e revise as questões que você errou."
+        message = "Você completou o Quiz. Continue praticando e revise as questões que você errou."
     else:
         message = ""
         
@@ -109,7 +109,7 @@ def send():
     num_questions = len(questions)
 
     if num_correct < num_questions:
-        message = "Você completou o quiz. Continue praticando e revise as questões que você errou."
+        message = "Você completou o Quiz. Continue praticando e revise as questões que você errou."
     else:
         message = ""
         
@@ -159,7 +159,7 @@ def submit():
     num_questions = len(questions)
 
     if num_correct < num_questions:
-        message = "Você completou o quiz. Continue praticando e revise as questões que você errou."
+        message = "Você completou o Quiz. Continue praticando e revise as questões que você errou."
     else:
         message = ""
 

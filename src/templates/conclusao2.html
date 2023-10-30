@@ -11,6 +11,20 @@
     <h1><b>Parabéns! Você concluiu com sucesso o Módulo 2 do nosso curso. Continue assim em sua jornada de aprendizado!</b></h1>
 </div>
 
+<style>
+    /* Estilos para centralizar o conteúdo */
+    .centered-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 600 vh;
+    }
+</style>
+
+<div class="centered-content">
+
 <ul>
     {% for result in results %}
         <li class="{{ 'correct' if 'correct' in result else 'incorrect' }}">{{ result }}</li>
