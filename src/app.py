@@ -52,18 +52,22 @@ def enviar():
             results.append(f'Pergunta {i + 1}: Correta')
         else:
             results.append(f'Pergunta {i + 1}: Incorreta')
-
-    num_correct = results.count('Pergunta Correta')
+           
+            
+    num_correct = 0 
+    for result in results:
+        if "Correta" in result:
+            num_correct += 1
     num_questions = len(questions)
 
-    if num_correct == num_questions:
-        message = "Parabéns! Você acertou todas as perguntas desta etapa!"
-    else:
+    if num_correct < num_questions:
         message = "Você completou o quiz. Continue praticando e revise as questões que você errou."
-
+    else:
+        message = ""
+        
     return render_template('conclusao1.html', results=results, message=message)
 
-       
+    
 @app.route('/teste_modulo2')
 def testemodulo2():
     return render_template('teste_modulo2.html')
@@ -98,15 +102,20 @@ def send():
         else:
             results.append(f'Pergunta {i + 1}: Incorreta')
 
-    num_correct = results.count('Pergunta Correta')
+    num_correct = 0 
+    for result in results:
+        if "Correta" in result:
+            num_correct += 1
     num_questions = len(questions)
 
-    if num_correct == num_questions:
-        message = "Parabéns! Você acertou todas as perguntas desta etapa!"
-    else:
+    if num_correct < num_questions:
         message = "Você completou o quiz. Continue praticando e revise as questões que você errou."
-
+    else:
+        message = ""
+        
     return render_template('conclusao2.html', results=results, message=message)
+
+        
 
 
 @app.route('/teste_modulo3')
