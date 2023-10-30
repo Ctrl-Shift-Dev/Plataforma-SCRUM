@@ -143,13 +143,16 @@ def submit():
         else:
             results.append(f'Pergunta {i + 1}: Incorreta')
 
-    num_correct = results.count('Pergunta Correta')
+    num_correct = 0 
+    for result in results:
+        if "Correta" in result:
+            num_correct += 1
     num_questions = len(questions)
 
-    if num_correct == num_questions:
-        message = "Parabéns! Você acertou todas as perguntas desta etapa!"
-    else:
+    if num_correct < num_questions:
         message = "Você completou o quiz. Continue praticando e revise as questões que você errou."
+    else:
+        message = ""
 
     return render_template('conclusao3.html', results=results, message=message)
 
