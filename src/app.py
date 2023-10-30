@@ -218,4 +218,8 @@ def sprintreview():
 def retrospective():
     return render_template('retrospective.html')
 
+@app.route('/pacer')
+def retrospective():
+    return render_template('pacer.html')
+
 app.run(debug=True)
