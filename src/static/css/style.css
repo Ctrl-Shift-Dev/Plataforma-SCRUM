@@ -21,11 +21,11 @@ p {
     line-height: 67px;
     text-align: center;
     letter-spacing: -4px;
-    margin: 0;
-    margin-left: 485px;
+    margin: 0 auto; /* Define a margem esquerda e direita para "auto" */
     color: #ffffff;
-    font-weight: bold;  
+    font-weight: bold;
 }
+
 
 .texto {
     color: #040404;
@@ -48,10 +48,10 @@ p {
 }
 
 .card a {
-    width: 266px;
-    height: 335px;
+    width: 200px;
+    height: 270px;
     margin: 25px;
-    border-radius: 30px;
+    border-radius: 25px;
     background-color: rgb(76, 176, 243);
     text-decoration: none;
 }
@@ -61,8 +61,8 @@ p {
 }
 
 .card img {
-    width: 209px;
-    height: 209px;
+    width: 143px;
+    height: 143px;
     margin: 27px 0 0 30px;
     text-align: center;
 }
@@ -71,7 +71,7 @@ p {
     color: #ffffff;
     text-align: center;
     font-family: Arial;
-    font-size: 30px;
+    font-size: 28px;
     font-style: italic;
     font-weight: 700;
     letter-spacing: -2px;
