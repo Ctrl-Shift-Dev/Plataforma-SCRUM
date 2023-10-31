@@ -95,8 +95,9 @@ p {
 
 header {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     align-items: center;
+    text-align: center;
     padding: 10px;
     background-color: rgb(76, 176, 243);
 
@@ -146,7 +147,7 @@ header {
 }
 
 .congratulations {
-    margin: 9%;
+    margin: 5%;
     margin-top: 50px;
     text-align: center;
     font-size: 19px;
@@ -161,7 +162,7 @@ header {
     text-align: center;
     display:flex;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 30px 2px;
     /* cursor: pointer; */
     min-width: auto;
    
@@ -204,3 +205,12 @@ header {
     top: 10%;
     transform: translateY(-1%);
 } 
+
+.centered-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+}
