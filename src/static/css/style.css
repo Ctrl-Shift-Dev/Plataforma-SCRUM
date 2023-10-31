@@ -1,16 +1,25 @@
 p {
     color: #040404;
-    font-family: Arial;
-    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 32px 346px 32px 346px;
+    margin: 16px 173px 16px 173px;
 
 }
 
 .subtitulo {
-    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 67px;
+    text-align: left;
+    letter-spacing: -2px;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #000000;
+    font-weight: bold;
 
 }
 
@@ -20,7 +29,7 @@ p {
     font-weight: 600;
     line-height: 67px;
     text-align: center;
-    letter-spacing: -4px;
+    letter-spacing: -3px;
     margin: 0 auto; /* Define a margem esquerda e direita para "auto" */
     color: #ffffff;
     font-weight: bold;
@@ -29,12 +38,17 @@ p {
 
 .texto {
     color: #040404;
-    text-align: justify;
-    font-family: Arial;
-    font-size: 26px;
+    text-align: center;
+    margin-left: 16%;
+    margin-right: 16%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    letter-spacing: -2px;
+
+
 
 }
 
@@ -141,22 +155,23 @@ header {
 }
 
 .button {
-    background-color: #ffffff;
-    padding: 15px 15px;
-    justify-content: center;
+    background-color: rgb(76, 176, 243);
+    border-radius: 5px;
+    padding: 10px 20px; 
     text-align: center;
-    display: flex;
+    display:flex;
     font-size: 16px;
-    margin: auto;
-    cursor: pointer;
-    border-radius: 20px;
-    text-decoration: none;
+    margin: 4px 2px;
+    /* cursor: pointer; */
+    min-width: auto;
+   
 
 }
 
 .button:hover {
-    background-color: #15abc3;
-}
+    background-color:#0379ffe1;
+} */
+
 
 .title {
     flex: 1;
@@ -169,13 +184,15 @@ header {
     font-weight: 600;
     line-height: 67px;
     text-align: center;
-    letter-spacing: -4px;
-    margin: 0;
+    letter-spacing: -3px;
+    margin: 0 auto; /* Define a margem esquerda e direita para "auto" */
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .content {
     margin: 8%;
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: left;
     font-size: 19px;
     padding: 20px;
@@ -184,7 +201,6 @@ header {
 
 .carousel-control-prev,
 .carousel-control-next {
-    top: 20%;
-    transform: translateY(-14%);
+    top: 10%;
+    transform: translateY(-1%);
 } 
-
