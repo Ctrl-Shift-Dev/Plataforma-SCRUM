@@ -171,24 +171,6 @@ header {
 
 .button:hover {
     background-color:#0379ffe1;
-} */
-
-
-.title {
-    flex: 1;
-    text-align: center;
-}
-
-.title h1 {
-    font-size: 45px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 67px;
-    text-align: center;
-    letter-spacing: -3px;
-    margin: 0 auto; /* Define a margem esquerda e direita para "auto" */
-    color: #ffffff;
-    font-weight: bold;
 }
 
 .content {
