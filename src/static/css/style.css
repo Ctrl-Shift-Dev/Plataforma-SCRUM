@@ -36,12 +36,12 @@ p {
 }
 
 .title-test {
-    font-size: 20px;
+    font-size: 22px;
     font-style: italic;
     font-weight: 600;
     line-height: 67px;
     text-align: center;
-    letter-spacing: -3px;
+    letter-spacing: -4px;
     margin: 0 auto; /* Define a margem esquerda e direita para "auto" */
     color: #ffffff;
     font-weight: bold;
