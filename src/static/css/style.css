@@ -35,6 +35,17 @@ p {
     font-weight: bold;
 }
 
+.title-test {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 67px;
+    text-align: center;
+    letter-spacing: -3px;
+    margin: 0 auto; /* Define a margem esquerda e direita para "auto" */
+    color: #ffffff;
+    font-weight: bold;
+}
 
 .texto {
     color: #040404;
@@ -66,13 +77,16 @@ p {
     height: 270px;
     margin: 25px;
     border-radius: 25px;
-    background-color: rgb(76, 176, 243);
+    /* background-color: rgb(76, 176, 243); */
     text-decoration: none;
+    background: linear-gradient(to bottom, rgb(151, 229, 255),#0058bce1);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card a:hover {
+/* .card a:hover {
     background-color: #0379ffe1;
-}
+} */
 
 .card img {
     width: 143px;
@@ -99,7 +113,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 10px;
-    background-color: rgb(76, 176, 243);
+    background: linear-gradient(to right, rgb(151, 229, 255),#0058bce1, rgb(151, 229, 255));
 
 }
 
