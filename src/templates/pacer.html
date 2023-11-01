@@ -156,7 +156,57 @@
             <input type="radio" name="q15" value="5"> 5
         </div>
 
-        <input type="submit" value="Enviar Avaliação">
+        <input type="submit" onclick="openPopup()" value="Enviar Avaliação">
+        
+        <div id="popup" class="popup">
+            <form onsubmit="saveName(); return false;">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <input id="downloadButton" type="submit" value="Salvar">
+            </form>
+        </div>
+
+        <form action="/gerar_pdf" method="post">
+            <input type="submit" value="Gerar PDF">
+        </form> 
+
+        <script>
+            function openPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+            }
+
+            function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+            }
+
+            function saveName() {
+            var nameInput = document.getElementById("name");
+            var name = nameInput.value;
+
+            // Enviar o nome para o servidor Flask
+            fetch('/save_name', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'name=' + name,
+            }).then(function(response) {
+                return response.text();
+            }).then(function(data) {
+                alert(data); // Exibe a mensagem do servidor
+            });
+
+        closePopup();
+
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            window.location.href = '';
+        });
+}
+
+        </script>
+        
     </form>
 </body>
 </html>

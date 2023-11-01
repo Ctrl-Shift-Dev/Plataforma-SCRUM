@@ -1,6 +1,15 @@
 from tkinter.messagebox import QUESTION
 from urllib import request
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, Response
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import B0
+from reportlab.lib import colors
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import landscape
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+import os
+
 app = Flask (__name__)
 
 @app.route('/')
@@ -221,5 +230,85 @@ def retrospective():
 @app.route('/pacer')
 def pacer():
     return render_template('pacer.html')
+
+@app.route('/save_name', methods=['POST'])
+def save_name():
+    global name
+    name = request.form['name']
+    return 'Nome salvo com sucesso!'
+
+@app.route('/get_saved_name')
+def get_saved_name():
+    global name
+    return name
+
+@app.route('/gerar_pdf', methods=['POST'])
+def gerar_pdf():
+    print(name)
+    # Puxando a fonte de fora
+    LsBold = "src/static/font/LeagueSpartan-Bold.ttf"  
+    GiBold = "src/static/font/GlacialIndifference-Bold.ttf"
+    GiRegular = "src/static/font/GlacialIndifference-Regular.ttf"
+    Ft = "src/static/font/Fontspring-theseasons-lt.ttf"
+    pdfmetrics.registerFont(TTFont("LeagueSpartan", LsBold))
+    pdfmetrics.registerFont(TTFont("GlacialIndifference-Regular", GiRegular))
+    pdfmetrics.registerFont(TTFont("GlacialIndifference-Bold", GiBold))
+    pdfmetrics.registerFont(TTFont("Fontspring-theseasons-lt", Ft))
+
+    # caminho para o arquivo PDF
+    pdf_path = os.path.join('src', 'static', 'docs', 'certificado.pdf')
+
+    #Crindo o arquivo pdf com o tamano 2000px, 1414px
+    cnv = canvas.Canvas(pdf_path, pagesize = (2000, 1414))
+
+    # Dcor de fundo como azul 
+    cnv.setFillColor(colors.HexColor("#0058bce1"))  # Azul
+
+    # retângulo que cobre toda a página para definir a cor de fundo
+    cnv.rect(0, 0, 2000, 1414, fill=True)
+
+    # retângulo branco que sobrebrepoe o fundo 
+    cnv.setFillColor(colors.HexColor("#FFFFFF"))  # Branco
+    cnv.rect(150, 100, 1700, 1214, fill=True) #tamanho e posicionamento
+
+    # adicionando a imagem 
+    cnv.drawImage("logo.jpg", 920, 930, width=170, height=170)
+
+    # Textos do certificado
+
+    # Texto do centro
+    cnv.setFont("LeagueSpartan", 70)  # Tamanho da fonte
+    cnv.setFillColor(colors.HexColor("#0058bce1"))  # Cor do texto (azul)
+    text_centro = "CERTIFICADO DE PARTICIPAÇÃO"
+    cnv.drawString(500, 800, text_centro)
+
+    # Texto subtitulo
+    cnv.setFont("GlacialIndifference-Bold", 40)  # Tamanho da fonte
+    cnv.setFillColor(colors.black)  # Cor do texto 
+    text_sub = "Este certificado vai para"
+    cnv.drawString(770, 720, text_sub)
+
+    # Nome da pesoa 
+    cnv.setFont("Fontspring-theseasons-lt", 100)  # Tamanho da fonte
+    # Centralizar o texto do nome
+    text_width = cnv.stringWidth(name, "Fontspring-theseasons-lt", 100)
+    x = (2000 - text_width) / 2
+    y = (1414 - 100) / 2
+    cnv.drawString(x, y - 100, name) # escrever o nome
+
+    # Texto final
+    cnv.setFont("GlacialIndifference-Regular", 40)  # Tamanho da fonte
+    text_final1 = "Por ter completado os estudos referente ao"
+    text_final2 = "método Scrum da plataforma Srun IT."
+    #conta para poder alinhar os textos 
+    y1 = (1414 - 40) / 2  # Coordenada y da primeira linha
+    y2 = y1 - 44  # Coordenada y da segunda linha
+    cnv.drawString(650, y1 - 250, text_final1)
+    cnv.drawString(700, y2 - 250, text_final2)
+
+    cnv.save()
+
+    return 
+
 
 app.run(debug=True)
