@@ -1,6 +1,6 @@
 from tkinter.messagebox import QUESTION
 from urllib import request
-from flask import Flask, render_template, request, Response
+from flask import Flask, render_template, request, Response, jsonify
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import B0
 from reportlab.lib import colors
@@ -231,20 +231,11 @@ def retrospective():
 def pacer():
     return render_template('pacer.html')
 
-@app.route('/save_name', methods=['POST'])
-def save_name():
+@app.route('/salvar_nome', methods=['POST'])
+def salvar_nome():
     global name
-    name = request.form['name']
-    return 'Nome salvo com sucesso!'
+    name = request.form['nome']
 
-@app.route('/get_saved_name')
-def get_saved_name():
-    global name
-    return name
-
-@app.route('/gerar_pdf', methods=['POST'])
-def gerar_pdf():
-    print(name)
     # Puxando a fonte de fora
     LsBold = "src/static/font/LeagueSpartan-Bold.ttf"  
     GiBold = "src/static/font/GlacialIndifference-Bold.ttf"
@@ -259,7 +250,7 @@ def gerar_pdf():
     pdf_path = os.path.join('src', 'static', 'docs', 'certificado.pdf')
 
     #Crindo o arquivo pdf com o tamano 2000px, 1414px
-    cnv = canvas.Canvas(pdf_path, pagesize = (2000, 1414))
+    cnv = canvas.Canvas('certificado.pdf', pagesize = (2000, 1414))
 
     # Dcor de fundo como azul 
     cnv.setFillColor(colors.HexColor("#0058bce1"))  # Azul
@@ -308,7 +299,9 @@ def gerar_pdf():
 
     cnv.save()
 
-    return 
+    return f"Nome '{name}' salvo com sucesso."
+
+
 
 
 app.run(debug=True)

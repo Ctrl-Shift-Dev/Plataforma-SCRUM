@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Avaliação Pacer</title>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/css/style_pacer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <h1>Avaliação Pacer</h1>
     <form>
         <!-- Questões -->
         <div class="question">
-            <label for="q1">Eu entendo o papel do Scrum Master como um 
+            <label for="q1">Eu entendo o papel do Scrum Master como um
                 facilitador e defensor da equipe.</label>
             <input type="radio" name="q1" value="1"> 1
             <input type="radio" name="q1" value="2"> 2
@@ -21,7 +26,7 @@
         </div>
 
         <div class="question">
-            <label for="q1">Eu sei como adaptar o Scrum para diferentes contextos 
+            <label for="q1">Eu sei como adaptar o Scrum para diferentes contextos
                 organizacionais:</label>
             <input type="radio" name="q2" value="1"> 1
             <input type="radio" name="q2" value="2"> 2
@@ -40,7 +45,7 @@
         </div>
 
         <div class="question">
-            <label for="q1">Eu compreendo os três principais papéis no Scrum: 
+            <label for="q1">Eu compreendo os três principais papéis no Scrum:
                 Scrum Master, Product Owner e Development Team:</label>
             <input type="radio" name="q4" value="1"> 1
             <input type="radio" name="q4" value="2"> 2
@@ -59,7 +64,7 @@
         </div>
 
         <div class="question">
-            <label for="q1">Eu sei como um Product Owner toma decisões sobre o 
+            <label for="q1">Eu sei como um Product Owner toma decisões sobre o
                 que será desenvolvido em cada Sprint:</label>
             <input type="radio" name="q6" value="1"> 1
             <input type="radio" name="q6" value="2"> 2
@@ -69,7 +74,7 @@
         </div>
 
         <div class="question">
-            <label for="q1">Eu vejo as reuniões de Sprint Retrospective como essenciais 
+            <label for="q1">Eu vejo as reuniões de Sprint Retrospective como essenciais
                 para o aprendizado e a melhoria contínua da equipe:
             </label>
             <input type="radio" name="q7" value="1"> 1
@@ -80,7 +85,7 @@
         </div>
 
         <div class="question">
-            <label for="q1">Eu acho que as reuniões de Sprint Planning são eficazes em definir o 
+            <label for="q1">Eu acho que as reuniões de Sprint Planning são eficazes em definir o
                 trabalho a ser realizado na Sprint:</label>
             <input type="radio" name="q8" value="1"> 1
             <input type="radio" name="q8" value="2"> 2
@@ -108,7 +113,7 @@
         </div>
 
         <div class="question">
-            <label for="q1">Eu vejo valor nas reuniões de refinamento 
+            <label for="q1">Eu vejo valor nas reuniões de refinamento
                 de backlog para preparar o trabalho futuro:</label>
             <input type="radio" name="q11" value="1"> 1
             <input type="radio" name="q11" value="2"> 2
@@ -127,7 +132,7 @@
         </div>
 
         <div class="question">
-            <label for="q1">Eu acredito que as ações de melhoria identificadas na 
+            <label for="q1">Eu acredito que as ações de melhoria identificadas na
                 Sprint Retrospective são implementadas:</label>
             <input type="radio" name="q13" value="1"> 1
             <input type="radio" name="q13" value="2"> 2
@@ -137,7 +142,7 @@
         </div>
 
         <div class="question">
-            <label for="q1">Eu acredito que o backlog refinado é essencial 
+            <label for="q1">Eu acredito que o backlog refinado é essencial
                 para um planejamento de uma Sprint eficaz: </label>
             <input type="radio" name="q14" value="1"> 1
             <input type="radio" name="q14" value="2"> 2
@@ -147,7 +152,7 @@
         </div>
 
         <div class="question">
-            <label for="q1">Eu acredito que a Sprint Planning é 
+            <label for="q1">Eu acredito que a Sprint Planning é
                 eficaz em estabelecer um plano para a Sprint:</label>
             <input type="radio" name="q15" value="1"> 1
             <input type="radio" name="q15" value="2"> 2
@@ -156,57 +161,14 @@
             <input type="radio" name="q15" value="5"> 5
         </div>
 
-        <input type="submit" onclick="openPopup()" value="Enviar Avaliação">
-        
-        <div id="popup" class="popup">
-            <form onsubmit="saveName(); return false;">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                <input id="downloadButton" type="submit" value="Salvar">
+        <body>
+            <form class="nome" action="/salvar_nome" method="POST">
+                <label for="nome">Digite seu nome:</label>
+                <input type="text" name="nome" id="nome" required>
+                <input type="submit" value="Enviar">
             </form>
-        </div>
+        </body>
 
-        <form action="/gerar_pdf" method="post">
-            <input type="submit" value="Gerar PDF">
-        </form> 
-
-        <script>
-            function openPopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "block";
-            }
-
-            function closePopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "none";
-            }
-
-            function saveName() {
-            var nameInput = document.getElementById("name");
-            var name = nameInput.value;
-
-            // Enviar o nome para o servidor Flask
-            fetch('/save_name', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: 'name=' + name,
-            }).then(function(response) {
-                return response.text();
-            }).then(function(data) {
-                alert(data); // Exibe a mensagem do servidor
-            });
-
-        closePopup();
-
-        document.getElementById('downloadButton').addEventListener('click', function() {
-            window.location.href = '';
-        });
-}
-
-        </script>
-        
-    </form>
 </body>
+
 </html>
