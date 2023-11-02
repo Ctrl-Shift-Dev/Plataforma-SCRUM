@@ -62,6 +62,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+<<<<<<< HEAD
 }
 
 .modal {
@@ -120,4 +121,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+=======
+>>>>>>> parent of ec24e61 (certificado)
 }
