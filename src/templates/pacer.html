@@ -162,21 +162,45 @@
             3 <input type="radio" name="q15" value="3">
             4 <input type="radio" name="q15" value="4">
             5 <input type="radio" name="q15" value="5">
+
         </div>
 
 
-        <body>
-            <form class="nome" action="/salvar_nome" method="POST">
-                <label for="nome">Digite seu nome:</label>
-                <input type="text" name="nome" id="nome" required>
-            </form>
+        <form class="nome" action="/salvar_nome" method="POST">
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" name="nome" id="nome" required>
+        </form>
 
-            <a href="/">
-                <input type="submit" value="Enviar">
-            </a>
+        <button id="openModalBtn" class="redirect-button">Enviar</button>
 
-        </body>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+                <p class="message">Parabéns por concluir com sucesso o curso! Sua dedicação e esforço são admiráveis.
+                    Este é um passo importante em direção ao seu desenvolvimento pessoal e profissional. Continue
+                    aprendendo e aplicando o que você adquiriu para alcançar seus objetivos. </p>
+                <button id="redirectBtn" class="redirect-button">Continuar</button>
+            </div>
+        </div>
 
+
+
+
+        <script>
+            document.getElementById("openModalBtn").addEventListener("click", function () {
+                document.getElementById("modal").style.display = "block";
+            });
+
+
+            document.getElementById("closeModalBtn").addEventListener("click", function () {
+                document.getElementById("modal").style.display = "none";
+            });
+
+            document.getElementById("redirectBtn").addEventListener("click", function () {
+
+                window.location.href = "/";
+            });
+        </script>
 
     </form>
 </body>
