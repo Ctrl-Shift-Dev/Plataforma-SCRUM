@@ -55,7 +55,10 @@ os processos necessários para a fidelização do cliente.
   <a href ="https://youtu.be/9_RjVpeYKVo?si=0Un3n2u2dpyAXk-a">Apresentação no Youtube</a>
 
   ### 2° Sprint
-![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/site_flask.gif)
+  ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/site_flask.gif)
+
+  ### 3° Sprint
+  ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/sprint3_gif%20(1).gif)
 
 
 ## 🗂 Requisitos <a id="requisitos"></a>
