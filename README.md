@@ -42,8 +42,8 @@ os processos necessários para a fidelização do cliente.
 | 2 | "Eu, como desenvolvedor, quero estruturar o site em HTML, para garantir o bom funcionamento do sistema." | Marcação do site em HTML | 80 | ✅ | 15/10 |
 | 2 | "Eu, como desenvolvedor, quero usar o CSS para estilizar o site." | Estilizaçao do site em CSS | 75 | ✅ | 15/10 |
 | 2 | "Eu, como usuário, quero uma barra de navegação para facilitar a transição entre páginas." | Barra de navegação | 60 | ✅ | 15/10 |
-| 3 | "Eu, como cliente, quero um formulário para avaliar o conhecimento dos meus colaboradores." | Avaliação de conteúdo | 50 | 🛠️ | 05/11 |
-| 3 | "Eu, como desenvolvedor, quero sugerir outros conteúdos para ampliar o contato do usuário com o método." | Sugestão de conteúdo (ferramentas, leitura, vídeos) | 35 | 🛠️ | 05/11 |
+| 3 | "Eu, como cliente, quero um formulário para avaliar o conhecimento dos meus colaboradores." | Testes de conteúdo e Avaliação Pacer | 50 | 🛠️ | 05/11 |
+| 3 | "Eu, como desenvolvedor, quero adicionar funcionalidade aos testes, dando feedback aos usuários." | Funcionalidade aos testes | 35 | 🛠️ | 05/11 |
 | 4 | "Eu, como desenvolvedor, quero revisar todo site em busca de possíveis falhas." | Revisão geral do produto | 25 | 🛑 | 26/11 |
 | 4 | "Eu, como desenvolvedor, quero que seja possível utilizar o site num dispositivo móvel." | Responsividade do sistema | 20 | 🛑 | 26/11 |
 
