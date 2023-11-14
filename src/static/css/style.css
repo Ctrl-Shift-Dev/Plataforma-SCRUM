@@ -208,3 +208,8 @@ header {
     justify-content: right;
     font-size:30px;
 }
+
+
+.video-iframe {
+    text-align: center; /* Centralizar o vídeo */
+}
