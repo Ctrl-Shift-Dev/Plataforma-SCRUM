@@ -231,6 +231,7 @@ def retrospective():
 def pacer():
     return render_template('pacer.html')
 
+
 @app.route('/salvar_nome', methods=['POST'])
 def salvar_nome():
     global name
