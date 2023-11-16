@@ -216,7 +216,7 @@ header {
 
 /* Botao voltar ao topo e rodapé */
 
-.btn {
+.btns {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,14 +229,14 @@ header {
     text-decoration: none;
     border-radius: 25%;
 }
-.btn::after {
+.btns::after {
     content: "↑";
     font-size: 40px;
     font-weight: bold;
     color: aliceblue;
     transition: margin-top 250ms;
 }
-.btn:hover::after {
+.btns:hover::after {
     margin-top:-8px;
 }
 
