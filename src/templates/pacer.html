@@ -12,7 +12,7 @@
         <img src="../static/img/logo.png" style="height: 50px; width: 60px;" alt="">
     </a>
 
-    <h1 class="titulo">Avaliação Pacer</h1>
+    <h1 class="titulo">Autoavaliação do método Scrum</h1>
 </header>
 
 <body>
@@ -162,65 +162,25 @@
             3 <input type="radio" name="q15" value="3">
             4 <input type="radio" name="q15" value="4">
             5 <input type="radio" name="q15" value="5">
-
         </div>
+              <!-- Fim das Questões -->
 
+                <!-- Campo de Nome -->
+                <div class="question">
+                    <label for="name" required>Digite seu Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <!-- Campo de E-mail -->
+                <div class="question">
+                    <label for="email" required>Digite seu E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <!-- Botão de Envio -->
+                <input type="submit" value="Enviar Avaliação">
+            </form>
 
-        <form class="nome" action="/salvar_nome" method="POST">
-            <label for="nome">Digite seu nome:</label>
-            <input type="text" name="nome" id="nome" required>
-        </form>
-
-        <button id="openModalBtn" class="redirect-button">Enviar</button>
-
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close" id="closeModalBtn">&times;</span>
-                <p class="message">Parabéns por concluir com sucesso o curso! Sua dedicação e esforço são admiráveis.
-                    Este é um passo importante em direção ao seu desenvolvimento pessoal e profissional. Continue
-                    aprendendo e aplicando o que você adquiriu para alcançar seus objetivos. </p>
-                <button id="redirectBtn" class="redirect-button">Continuar</button>
-            </div>
-        </div>
-
-        <script>
-            document.getElementById("openModalBtn").addEventListener("click", function () {
-                document.getElementById("modal").style.display = "block";
-            });
-
-
-            document.getElementById("closeModalBtn").addEventListener("click", function () {
-                document.getElementById("modal").style.display = "none";
-            });
-
-            document.getElementById("redirectBtn").addEventListener("click", function () {
-
-                window.location.href = "/";
-            });
-
-            function validarNome() {
-                const nomeInput = document.getElementById("nome");
-                const nomeErro = document.getElementById("nomeErro");
-                const botaoEnviar = document.getElementById("openModalBtn");
-
-                if (nomeInput.value.trim() === "") {
-                    nomeErro.style.display = "block";
-                    botaoEnviar.disabled = true;
-                } else {
-                    nomeErro.style.display = "none";
-                    botaoEnviar.disabled = false;
-                }
-            }
-
-            const nomeInput = document.getElementById("nome");
-            nomeInput.addEventListener("input", validarNome);
-
-            validarNome();
-
-
-        </script>
-
-    </form>
 </body>
 
 </html>
