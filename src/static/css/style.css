@@ -261,7 +261,7 @@ header {
     fill: rgb(0, 176, 217);
 }
 .main_footer   { background-color:rgb(0, 176, 217); color:#ffffff; font-size:1em; }
-.main_footer .content { float:left; width:80%; margin:0 10%; padding: 5em 0; }
+.main_footer .content { float:left; width:80%; margin:0 10%; padding:2em 0; }
 .containerr { float:left; width:100%; }
 .colfooter { 
  
@@ -400,7 +400,7 @@ header {
     opacity:1;
     width: 150%;
 }
-.main_footer_copy   { background-color:rgb(0, 165, 202); width:100%; float:left; font-family: 'Lato', sans-serif; text-align:center; padding:1.5em 0em; }
+.main_footer_copy   { background-color:rgb(0, 165, 202); width:100%; float:left; font-family: 'Lato', sans-serif; text-align:center; padding:0.5em 0em; }
 .main_footer_copy p { font-size:1em; color:#ffffff; height:20px; }
 .main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
 .main_footer_copy .by   { font-size:0.96em; }
