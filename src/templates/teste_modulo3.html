@@ -1,56 +1,75 @@
-{% extends "base.html" %}
-{% block title %} Teste 3 {% endblock %}
-{% block content %}
-<header>
-    <a href="/">
-        <img src="../static/img/logo.png" style="height: 50px; width: 60px;" alt="">
-    </a>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <h1 class="titulo">Teste de Aprendizado Módulo 3</h1>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/icons/fonts-icones.css">
+    <!-- <link rel="icon" href="/src/static/img/favicon.png" type="image/x-icon"> -->
+</head>
 
-<div class="content">
+<body>
+    <header>
+        <a href="/">
+            <img src="../static/img/logo.png" style="height: 50px; width: 60px;" alt="">
+        </a>
 
-    <form action="/submit" method="post">
-        <h1><b>Questionário:</b></h1>
-        
-        
-        <div class="question">
-            <div><b>Pergunta 1:</b> Qual é o objetivo da Sprint Planning no Método Scrum?</p></div>
-            <input type="radio" name="q1" value="a" required>A) Revisar o trabalho concluído durante o Sprint.<br>
-            <input type="radio" name="q1" value="b">B) Definir as tarefas diárias dos membros da equipe.<br>
-            <input type="radio" name="q1" value="c">C) Selecionar e comprometer-se com as histórias do usuário para o próximo Sprint.<br>
-            <input type="radio" name="q1" value="d">D) Realizar uma retrospectiva para identificar melhorias.<p>
-        </div>
+        <h1 class="titulo">Teste de Aprendizado Módulo 3</h1>
+    </header>
 
-        <div class="question">
-            <div><b>Pergunta 2:</b> Qual é o principal propósito da Daily Scrum no Método Scrum?</p>
-            <input type="radio" name="q2" value="a" required>A) Planejar o próximo Sprint.<br>
-            <input type="radio" name="q2" value="b">B) Monitorar o progresso do projeto.<br>
-            <input type="radio" name="q2" value="c">C) Identificar problemas e obstáculos.<br>
-            <input type="radio" name="q2" value="d">D) Realizar uma revisão do Sprint anterior<p>
-        </div>
+    <div class="content">
 
-        <div class="question">
-            <b>Pergunta 3:</b> O que acontece durante o evento Sprint Review no método Scrum?</p>
-            <input type="radio" name="q3" value="a"  required>A) A equipe realiza a retrospectiva do Sprint.<br>
-            <input type="radio" name="q3" value="b">B) A equipe apresenta o trabalho concluído no Sprint e obtém feedback.<br>
-            <input type="radio" name="q3" value="c">C) A equipe define as tarefas para o próximo dia.<br>
-            <input type="radio" name="q3" value="d">D) O Product Owner prioriza o backlog do Sprint.<p>
-        </div>
-        <div class="question">
-            <b>Pergunta 4:</b> Qual é o objetivo da Sprint Retrospective no Método Scrum? </p>
-            <input type="radio" name="q4" value="a"  required>A) Definir as metas para o próximo Sprint. <br>
-            <input type="radio" name="q4" value="b">B) Revisar o progresso diário da equipe.<br>
-            <input type="radio" name="q4" value="c">C) Identificar melhorias no processo e no trabalho da equipe.<br>
-            <input type="radio" name="q4" value="d">D) Realizar uma revisão do produto entregue no Sprint.<br>
-            <p>&nbsp;&nbsp;&nbsp;</p>
-        </div>
+        <form action="/submit" method="post">
+            <h1><b>Questionário:</b></h1>
 
-        <input type="submit" value="Enviar" class="btn btn-primary mx-auto text-center">
-        
-    </form>
 
-</div>
+            <div class="question">
+                <div><b>Pergunta 1:</b> Qual é o objetivo da Sprint Planning no Método Scrum?</p>
+                </div>
+                <input type="radio" name="q1" value="a" required>A) Revisar o trabalho concluído durante o Sprint.<br>
+                <input type="radio" name="q1" value="b">B) Definir as tarefas diárias dos membros da equipe.<br>
+                <input type="radio" name="q1" value="c">C) Selecionar e comprometer-se com as histórias do usuário para
+                o próximo Sprint.<br>
+                <input type="radio" name="q1" value="d">D) Realizar uma retrospectiva para identificar melhorias.<p>
+            </div>
 
-{% endblock %}
+            <div class="question">
+                <div><b>Pergunta 2:</b> Qual é o principal propósito da Daily Scrum no Método Scrum?</p>
+                    <input type="radio" name="q2" value="a" required>A) Planejar o próximo Sprint.<br>
+                    <input type="radio" name="q2" value="b">B) Monitorar o progresso do projeto.<br>
+                    <input type="radio" name="q2" value="c">C) Identificar problemas e obstáculos.<br>
+                    <input type="radio" name="q2" value="d">D) Realizar uma revisão do Sprint anterior<p>
+                </div>
+
+                <div class="question">
+                    <b>Pergunta 3:</b> O que acontece durante o evento Sprint Review no método Scrum?</p>
+                    <input type="radio" name="q3" value="a" required>A) A equipe realiza a retrospectiva do Sprint.<br>
+                    <input type="radio" name="q3" value="b">B) A equipe apresenta o trabalho concluído no Sprint e obtém
+                    feedback.<br>
+                    <input type="radio" name="q3" value="c">C) A equipe define as tarefas para o próximo dia.<br>
+                    <input type="radio" name="q3" value="d">D) O Product Owner prioriza o backlog do Sprint.<p>
+                </div>
+                <div class="question">
+                    <b>Pergunta 4:</b> Qual é o objetivo da Sprint Retrospective no Método Scrum? </p>
+                    <input type="radio" name="q4" value="a" required>A) Definir as metas para o próximo Sprint. <br>
+                    <input type="radio" name="q4" value="b">B) Revisar o progresso diário da equipe.<br>
+                    <input type="radio" name="q4" value="c">C) Identificar melhorias no processo e no trabalho da
+                    equipe.<br>
+                    <input type="radio" name="q4" value="d">D) Realizar uma revisão do produto entregue no Sprint.<br>
+                    <p>&nbsp;&nbsp;&nbsp;</p>
+                </div>
+
+                <input type="submit" value="Enviar" class="btn btn-primary mx-auto text-center">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

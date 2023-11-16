@@ -1,54 +1,73 @@
-{% extends "base.html" %}
-{% block title %} Teste 2 {% endblock %}
-{% block content %}
-<header>
-    <a href="/">
-        <img src="../static/img/logo.png" style="height: 50px; width: 60px;" alt="">
-    </a>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <h1 class="titulo">Teste de Aprendizado Módulo 2</h1>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/icons/fonts-icones.css">
+    <!-- <link rel="icon" href="/src/static/img/favicon.png" type="image/x-icon"> -->
+</head>
 
-<div class="content">
+<body>
+    <header>
+        <a href="/">
+            <img src="../static/img/logo.png" style="height: 50px; width: 60px;" alt="">
+        </a>
 
-    <form action="/send" method="post">
-        <h1><b>Questionário:</b></h1>
+        <h1 class="titulo">Teste de Aprendizado Módulo 2</h1>
+    </header>
 
-        <div class="question">
-            <div><b>Pergunta 1:</b> Qual das seguintes afirmações sobre o Product Backlog está correta? </p></div>
-            <input type="radio" name="q1" value="a" required>A) É uma lista de tarefas detalhadas para a próxima Sprint.<br>
-            <input type="radio" name="q1" value="b">B) Deve ser priorizado pelo Scrum Master.<br>
-            <input type="radio" name="q1" value="c">C) Contém apenas requisitos de alta prioridade.<br>
-            <input type="radio" name="q1" value="d">D) Evolui continuamente à medida que novos requisitos surgem.<p>
-        </div>
+    <div class="content">
 
-        <div class="question"> 
-            <div><b>Pergunta 2:</b> Qual é a principal função da Sprint Backlog? </p>
-            <input type="radio" name="q2" value="a" required>A) Definir os objetivos do produto.<br>
-            <input type="radio" name="q2" value="b">B) Detalhar o Product Backlog para o próximo trimestre.<br>
-            <input type="radio" name="q2" value="c">C) Identificar impedimentos no projeto.<br>
-            <input type="radio" name="q2" value="d">D) Planejar o trabalho da equipe para a Sprint atual.<p>
-        </div>
+        <form action="/send" method="post">
+            <h1><b>Questionário:</b></h1>
 
-        <div class="question">
-            <b>Pergunta 3:</b> O que é um Product Increment?</p>
-            <input type="radio" name="q3" value="a" required>A) Um relatório de progresso da equipe.<br>
-            <input type="radio" name="q3" value="b">B) Uma lista de tarefas de baixa prioridade no Product Backlog.<br>
-            <input type="radio" name="q3" value="c">C) Uma versão potencialmente entregável do produto após o término da Sprint.<br>
-            <input type="radio" name="q3" value="d">D) Um documento de planejamento de projeto.<p>
-        </div>
-        <div class="question">
-            <b>Pergunta 4:</b> Quem é geralmente responsável por priorizar os itens no Product Backlog? </p>
-            <input type="radio" name="q4" value="a" required>A) A equipe de desenvolvimento.<br>
-            <input type="radio" name="q4" value="b">B) Os stakeholders.<br>
-            <input type="radio" name="q4" value="c">C) O Scrum Master.<br>
-            <input type="radio" name="q4" value="d">D) O Product Owner.<br>
-            <p>&nbsp;&nbsp;&nbsp;</p>
-        </div>
-        
-        <input type="submit" value="Enviar" class="btn btn-primary mx-auto text-center">
+            <div class="question">
+                <div><b>Pergunta 1:</b> Qual das seguintes afirmações sobre o Product Backlog está correta? </p>
+                </div>
+                <input type="radio" name="q1" value="a" required>A) É uma lista de tarefas detalhadas para a próxima
+                Sprint.<br>
+                <input type="radio" name="q1" value="b">B) Deve ser priorizado pelo Scrum Master.<br>
+                <input type="radio" name="q1" value="c">C) Contém apenas requisitos de alta prioridade.<br>
+                <input type="radio" name="q1" value="d">D) Evolui continuamente à medida que novos requisitos surgem.<p>
+            </div>
 
-    </form>
-</div>
+            <div class="question">
+                <div><b>Pergunta 2:</b> Qual é a principal função da Sprint Backlog? </p>
+                    <input type="radio" name="q2" value="a" required>A) Definir os objetivos do produto.<br>
+                    <input type="radio" name="q2" value="b">B) Detalhar o Product Backlog para o próximo trimestre.<br>
+                    <input type="radio" name="q2" value="c">C) Identificar impedimentos no projeto.<br>
+                    <input type="radio" name="q2" value="d">D) Planejar o trabalho da equipe para a Sprint atual.<p>
+                </div>
 
-{% endblock %}
+                <div class="question">
+                    <b>Pergunta 3:</b> O que é um Product Increment?</p>
+                    <input type="radio" name="q3" value="a" required>A) Um relatório de progresso da equipe.<br>
+                    <input type="radio" name="q3" value="b">B) Uma lista de tarefas de baixa prioridade no Product
+                    Backlog.<br>
+                    <input type="radio" name="q3" value="c">C) Uma versão potencialmente entregável do produto após o
+                    término da Sprint.<br>
+                    <input type="radio" name="q3" value="d">D) Um documento de planejamento de projeto.<p>
+                </div>
+                <div class="question">
+                    <b>Pergunta 4:</b> Quem é geralmente responsável por priorizar os itens no Product Backlog? </p>
+                    <input type="radio" name="q4" value="a" required>A) A equipe de desenvolvimento.<br>
+                    <input type="radio" name="q4" value="b">B) Os stakeholders.<br>
+                    <input type="radio" name="q4" value="c">C) O Scrum Master.<br>
+                    <input type="radio" name="q4" value="d">D) O Product Owner.<br>
+                    <p>&nbsp;&nbsp;&nbsp;</p>
+                </div>
+
+                <input type="submit" value="Enviar" class="btn btn-primary mx-auto text-center">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

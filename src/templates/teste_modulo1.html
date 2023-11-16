@@ -1,56 +1,77 @@
-{% extends "base.html" %}
-{% block title %} Teste 1 {% endblock %}
-{% block content %}
-<header>
-    <a href="/">
-        <img src="../static/img/logo.png" style="height: 50px; width: 60px;" alt="">
-    </a>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <h1 class="titulo">Teste de Aprendizado Módulo 1</h1>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/icons/fonts-icones.css">
+    <!-- <link rel="icon" href="/src/static/img/favicon.png" type="image/x-icon"> -->
+</head>
 
-<div class="content">
+<body>
+    <header>
+        <a href="/">
+            <img src="../static/img/logo.png" style="height: 50px; width: 60px;" alt="">
+        </a>
 
-    <form action="/enviar" method="post">
-        <h1><b>Questionário:</b></h1>
-        
-        <div class="question">
-            <div><b>Pergunta 1:</b> Qual é a principal responsabilidade do Scrum Master em relação aos impedimentos no Scrum? </p></div>
-            <input type="radio" name="q1" value="a" required>A) Identificar e documentar impedimentos.<br>
-            <input type="radio" name="q1" value="b">B) Resolver todos os impedimentos sozinho.<br>
-            <input type="radio" name="q1" value="c">C) Remover impedimentos que afetam o progresso da equipe.<br>
-            <input type="radio" name="q1" value="d">D) Ignorar os impedimentos e focar apenas nas metas do sprint.<p>
-        </div>
+        <h1 class="titulo">Teste de Aprendizado Módulo 1</h1>
+    </header>
 
-        <div class="question">
-            <div><b>Pergunta 2:</b> Qual é o principal propósito da Daily Scrum no Método Scrum?</p>
-            <input type="radio" name="q2" value="a" required>A) Gerenciar o backlog do produto.<br>
-            <input type="radio" name="q2" value="b">B) Criar documentação de projeto.<br>
-            <input type="radio" name="q2" value="c">C) Realizar a Reunião de Planejamento da Sprint.<br>
-            <input type="radio" name="q2" value="d">D) Desenvolver código de software.<p>
-        </div>
+    <div class="content">
 
-        <div class="question">
-            <b>Pergunta 3:</b> De acordo com o texto, qual é uma das responsabilidades fundamentais de um Product Owner?</p>
-            <input type="radio" name="q3" value="a" required>A) Desenvolver código de software.<br>
-            <input type="radio" name="q3" value="b">B) Gerenciar o backlog do produto.<br>
-            <input type="radio" name="q3" value="c">C) Coletar feedback de usuários para relatórios de bugs.<br>
-            <input type="radio" name="q3" value="d">D) Conduzir reuniões de retrospectiva de sprint.<p>
-        </div>
-        <div class="question">
-            <b>Pergunta 4:</b> Qual é uma das principais responsabilidades dos membros da equipe de desenvolvimento (Team Dev) mencionada no texto?
-        </p>
-            <input type="radio" name="q4" value="a" required>A) Definir a visão do produto.<br>
-            <input type="radio" name="q4" value="b">B) Realizar reuniões de retrospectiva da sprint.<br>
-            <input type="radio" name="q4" value="c">C) Escrever código, realizar testes e integrar novos recursos no produto.<br>
-            <input type="radio" name="q4" value="d">D) Priorizar o backlog do produto.<br>
+        <form action="/enviar" method="post">
+            <h1><b>Questionário:</b></h1>
 
-            <p>&nbsp;&nbsp;&nbsp;</p>
-        </div>
-        <input type="submit" value="Enviar" class="btn btn-primary mx-auto text-center">
-        
-    </form>
+            <div class="question">
+                <div><b>Pergunta 1:</b> Qual é a principal responsabilidade do Scrum Master em relação aos impedimentos
+                    no Scrum? </p>
+                </div>
+                <input type="radio" name="q1" value="a" required>A) Identificar e documentar impedimentos.<br>
+                <input type="radio" name="q1" value="b">B) Resolver todos os impedimentos sozinho.<br>
+                <input type="radio" name="q1" value="c">C) Remover impedimentos que afetam o progresso da equipe.<br>
+                <input type="radio" name="q1" value="d">D) Ignorar os impedimentos e focar apenas nas metas do sprint.
+                <p>
+            </div>
 
-</div>
+            <div class="question">
+                <div><b>Pergunta 2:</b> Qual é o principal propósito da Daily Scrum no Método Scrum?</p>
+                    <input type="radio" name="q2" value="a" required>A) Gerenciar o backlog do produto.<br>
+                    <input type="radio" name="q2" value="b">B) Criar documentação de projeto.<br>
+                    <input type="radio" name="q2" value="c">C) Realizar a Reunião de Planejamento da Sprint.<br>
+                    <input type="radio" name="q2" value="d">D) Desenvolver código de software.<p>
+                </div>
 
-{% endblock %}
+                <div class="question">
+                    <b>Pergunta 3:</b> De acordo com o texto, qual é uma das responsabilidades fundamentais de um
+                    Product Owner?</p>
+                    <input type="radio" name="q3" value="a" required>A) Desenvolver código de software.<br>
+                    <input type="radio" name="q3" value="b">B) Gerenciar o backlog do produto.<br>
+                    <input type="radio" name="q3" value="c">C) Coletar feedback de usuários para relatórios de bugs.<br>
+                    <input type="radio" name="q3" value="d">D) Conduzir reuniões de retrospectiva de sprint.<p>
+                </div>
+                <div class="question">
+                    <b>Pergunta 4:</b> Qual é uma das principais responsabilidades dos membros da equipe de
+                    desenvolvimento (Team Dev) mencionada no texto?
+                    </p>
+                    <input type="radio" name="q4" value="a" required>A) Definir a visão do produto.<br>
+                    <input type="radio" name="q4" value="b">B) Realizar reuniões de retrospectiva da sprint.<br>
+                    <input type="radio" name="q4" value="c">C) Escrever código, realizar testes e integrar novos
+                    recursos no produto.<br>
+                    <input type="radio" name="q4" value="d">D) Priorizar o backlog do produto.<br>
+
+                    <p>&nbsp;&nbsp;&nbsp;</p>
+                </div>
+                <input type="submit" value="Enviar" class="btn btn-primary mx-auto text-center">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
