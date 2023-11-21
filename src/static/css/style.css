@@ -201,7 +201,8 @@ header {
 } 
 
 .centered-content {
-font-weight: bold;
+    font-weight: bold;
+    font-style: italic;
     font-size: 29px;
     letter-spacing: -2px;
     color:rgb(255, 255, 255);
