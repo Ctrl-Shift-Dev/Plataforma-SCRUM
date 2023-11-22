@@ -14,10 +14,8 @@ p {
     font-style: italic;
     font-weight: 600;
     line-height: 67px;
-    text-align: left;
+    text-align: center;
     letter-spacing: -2px;
-    margin-left: 15%;
-    margin-right: 15%;
     color: #000000;
     font-weight: bold;
 
@@ -212,6 +210,7 @@ header {
 
 .video-iframe {
     text-align: center; /* Centralizar o vídeo */
+    /* background: linear-gradient(to right, rgb(151, 229, 255),#0058bce1, rgb(151, 229, 255));; */
 }
 
 /* Botao voltar ao topo e rodapé */
