@@ -83,9 +83,10 @@ p {
     color: #fff;
 }
 
-/* .card a:hover {
-    background-color: #0379ffe1;
-} */
+ .card a:hover {
+    background-color: #00397a;
+    transform: scale(1.1)
+} 
 
 .card img {
     width: 143px;
@@ -355,7 +356,7 @@ header {
     width: 0%;
     height: 100%;
     display: block;
-    background: #262626;
+    background: #ffffff;
     position: absolute;
     -ms-transform: skewX(-15deg);
     -webkit-transform: skewX(-15deg); 
@@ -376,7 +377,7 @@ header {
     width: 0%;
     height: 100%;
     display: block;
-    background: #e82626;
+    background: rgba(43, 140, 197, 0.541);
     position: absolute;
     -ms-transform: skewX(-15deg);
     -webkit-transform: skewX(-15deg); 
