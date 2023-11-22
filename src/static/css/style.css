@@ -115,6 +115,14 @@ header {
 
 }
 
+.navbar,
+.mr-auto {
+flex: 1;
+margin: auto !important;
+display: flex;
+justify-content: space-between;
+}
+
 .action {
     align-items: center;
     color: black;
