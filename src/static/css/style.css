@@ -218,7 +218,7 @@ header {
 
 
 .btns {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -229,8 +229,8 @@ header {
     background-color: #0379ffe1;
     text-decoration: none;
     border-radius: 25%;
+    z-index: 1; /* Garante que o botão esteja acima do conteúdo da página */
 }
-
 .btns::after {
     content: "↑";
     font-size: 40px;
@@ -238,7 +238,6 @@ header {
     color: aliceblue;
     transition: margin-top 250ms;
 }
-
 .btns:hover::after {
     margin-top: -8px;
 }

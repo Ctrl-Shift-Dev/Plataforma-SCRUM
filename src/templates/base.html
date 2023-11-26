@@ -68,9 +68,38 @@
     {% block content %}
     {% endblock %}
 
+    <style>
+        body {
+            height: 200vh; /* Ajuste a altura conforme necessário para testar o scroll */
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            height: 25vh;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
     <section></section>
-    <a href="#" class="btns"></a>
+    <a href="#" class="btns" id="scrollButton"></a>
 
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollButton = document.getElementById('scrollButton');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var documentHeight = document.documentElement.scrollHeight;
+
+            // Defina um limite de porcentagem da página para mostrar o botão (por exemplo, 80%)
+            var percentageToShowButton = 70;
+
+            if ((scrollPosition / documentHeight) * 100 >= percentageToShowButton) {
+                scrollButton.style.display = 'flex';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+    </script>
     <!--Inicio Footer-->
 
     <div class="custom-shape-divider-bottom-1683068753">
