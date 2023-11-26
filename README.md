@@ -60,6 +60,9 @@ os processos necessários para a fidelização do cliente.
   ### 3° Sprint
   ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/sprint3_gif%20(1).gif)
 
+  ### 4° Sprint
+  ![](https://github.com/Ctrl-Shift-Dev/Plataforma-SCRUM/blob/main/docs/videos/sprint4.gif)
+
 
 ## 🗂 Requisitos <a id="requisitos"></a>
 <details>
@@ -104,7 +107,7 @@ os processos necessários para a fidelização do cliente.
 | Nome | Cargo | Github | Linkedin |
 | ---- | ----- | ------ | -------- | 
 | Paloma Lima da Silva | Scrum Master |  <a href="https://github.com/palomalima22"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
-| Breno Augusto Santos Jesus  | Product Owner |  <a href="https://github.com/brenoasj"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
+| Breno Augusto Santos Jesus  | Product Owner |  <a href="https://github.com/brenoasj"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href="https://www.linkedin.com/in/brenoaugusto1910/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
 | André Augustos M. Neves | Dev Team | <a href="https://github.com/andreN4vs"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
 | Allan Rafael Pereira da Silva | Dev Team | <a href=""><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
 | Gabriel Felipe Côrrea da Silva | Dev Team | <a href="https://github.com/gabrielfelip"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> | <a href="https://www.linkedin.com/in/gabriel-silva--cs/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> |
