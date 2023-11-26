@@ -538,3 +538,11 @@ header {
     font-weight: bold;
     color: white;
 }
+
+.navbar-nav-right .nav-item.active.dropdown a {
+    color: #000000;
+}
+
+.navbar-nav-right .nav-item.active.dropdown a:hover {
+    color: #ffffff; 
+}
