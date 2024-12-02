@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ, Cores e Mensagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .faq-container {
+            margin-bottom: 20px;
+        }
+        .color-checkboxes {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .message-box {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQ</h1>
+
+    <!-- FAQ Section -->
+    <div id="faq-section">
+        <div class="faq-container">
+            <h3>Pergunta 1:</h3>
+            <p>Qual é o seu nome?</p>
+            <p><strong>Resposta:</strong> Meu nome é ChatGPT.</p>
+        </div>
+        <div class="faq-container">
+            <h3>Pergunta 2:</h3>
+            <p>Qual é a sua função?</p>
+            <p><strong>Resposta:</strong> Eu sou um assistente de IA para ajudar com informações e tarefas.</p>
+        </div>
+        <div class="faq-container">
+            <h3>Pergunta 3:</h3>
+            <p>Como você funciona?</p>
+            <p><strong>Resposta:</strong> Utilizo aprendizado de máquina para entender e gerar texto em linguagem natural.</p>
+        </div>
+    </div>
+
+    <h2>Escolha suas cores favoritas:</h2>
+    <div class="color-checkboxes">
+        <label><input type="checkbox" name="color" value="Vermelho"> Vermelho</label>
+        <label><input type="checkbox" name="color" value="Azul"> Azul</label>
+        <label><input type="checkbox" name="color" value="Verde"> Verde</label>
+    </div>
+
+    <button onclick="enviarCores()">Enviar Cores</button>
+    
+    <!-- Caixa de Texto para mensagem -->
+    <div class="message-box">
+        <h2>Digite sua mensagem:</h2>
+        <textarea id="userMessage" rows="4" cols="50" placeholder="Escreva sua mensagem aqui..."></textarea>
+    </div>
+
+    <!-- Botões de Envio -->
+
+    <button onclick="enviarFaq()">Enviar FAQ</button>
+
+    <script>
+        // Função para enviar as cores selecionadas
+        function enviarCores() {
+            const selectedColors = [];
+            const checkboxes = document.querySelectorAll('input[name="color"]:checked');
+            checkboxes.forEach(checkbox => {
+                selectedColors.push(checkbox.value);
+            });
+
+            // Verificar se ao menos uma cor foi selecionada
+            if (selectedColors.length === 0) {
+                alert("Por favor, selecione ao menos uma cor.");
+                return;
+            }
+
+            // Enviar as cores para o backend
+            fetch('/send-colors', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ colors: selectedColors }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Cores enviadas com sucesso!');
+            })
+            .catch(error => {
+                console.error('Erro ao enviar as cores:', error);
+                alert('Erro ao enviar as cores.');
+            });
+        }
+
+    </script>
+</body>
+</html>

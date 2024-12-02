@@ -1,0 +1,12 @@
+[
+    {
+        "category": "Configuração",
+        "question": "Como configuro minha conta?",
+        "answer": "Para configurar sua conta, vá até as configurações de perfil e siga as instruções."
+    },
+    {
+        "category": "Problemas Comuns",
+        "question": "Esqueci minha senha. Como recupero?",
+        "answer": "Clique em 'Esqueceu sua senha?' na página de login para redefinir sua senha."
+    }
+]
